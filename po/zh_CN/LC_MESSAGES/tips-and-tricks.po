@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../tips-and-tricks.rst:2
 msgid "Tips and Tricks"
-msgstr ""
+msgstr "技巧与窍门"
 
 #: ../../tips-and-tricks.rst:4
 msgid "This page explains a few useful features of the Flatpak CLI."

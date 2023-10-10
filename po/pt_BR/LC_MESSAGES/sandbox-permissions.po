@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Flatpak \n"
 "Report-Msgid-Bugs-To: https://github.com/flatpak/flatpak-docs/issues\n"
-"POT-Creation-Date: 2023-01-07 16:26-0600\n"
+"POT-Creation-Date: 2023-10-10 10:17+0800\n"
 "PO-Revision-Date: 2023-05-31 14:38-0300\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language: pt_BR\n"
@@ -444,8 +444,8 @@ msgid ""
 "The ``home`` permission also has exceptions as it does not grant access "
 "to the subdirectories for other applications in ``~/.var/app/``."
 msgstr ""
-"A permissão ``home`` também tem exceções, pois ela não concede acesso aos "
-"subdiretórios para outros aplicativos em ``~/.var/app/``."
+"A permissão ``home`` também tem exceções, pois ela não concede acesso aos"
+" subdiretórios para outros aplicativos em ``~/.var/app/``."
 
 #: ../../sandbox-permissions.rst:161
 msgid "Device access"
@@ -508,11 +508,19 @@ msgstr ""
 msgid "With those permissions glib will continue using dconf directly."
 msgstr "Com essas permissões, o glib continuará usando o dconf diretamente."
 
-#: ../../sandbox-permissions.rst:193
+#: ../../sandbox-permissions.rst:192
+msgid ""
+"If you use a newer runtime where dconf is no longer built and still need "
+"it you will have to build the `dconf "
+"<https://download.gnome.org/sources/dconf/>`_ GIO module and set "
+"``--env=GIO_EXTRA_MODULES=/app/lib/gio/modules/``."
+msgstr ""
+
+#: ../../sandbox-permissions.rst:197
 msgid "gvfs access"
 msgstr "Acesso a gvfs"
 
-#: ../../sandbox-permissions.rst:195
+#: ../../sandbox-permissions.rst:199
 msgid ""
 "As of gvfs 1.48, the gvfs daemons and applications use an on-disk socket "
 "to communicate, rather than an abstract socket so that the gvfs "
@@ -524,7 +532,7 @@ msgstr ""
 "infraestrutura do gvfs ainda funcione quando o suporte à rede estiver "
 "desabilitado no isolamento do aplicativo."
 
-#: ../../sandbox-permissions.rst:199
+#: ../../sandbox-permissions.rst:203
 msgid ""
 "A number of different options need to be passed depending on the "
 "application's use of gvfs."
@@ -532,7 +540,7 @@ msgstr ""
 "Várias opções diferentes precisam ser passadas dependendo do uso de gvfs "
 "do aplicativo."
 
-#: ../../sandbox-permissions.rst:202
+#: ../../sandbox-permissions.rst:206
 msgid ""
 "``--talk-name=org.gtk.vfs.*`` is necessary to talk to the gvfs daemons "
 "over D-Bus and list mounts using the GIO APIs."
@@ -540,7 +548,7 @@ msgstr ""
 "``--talk-name=org.gtk.vfs.*`` é necessário para falar com os daemons do "
 "gvfs sobre D-Bus e listar montagens usando as APIs do GIO."
 
-#: ../../sandbox-permissions.rst:205
+#: ../../sandbox-permissions.rst:209
 msgid ""
 "``--filesystem=xdg-run/gvfsd`` is necessary to use the GIO APIs to list "
 "and access non-native files using the GIO APIs, using URLs rather than "
@@ -550,7 +558,7 @@ msgstr ""
 "listar e acessar arquivos não nativos usando as APIs do GIO, usando URLs "
 "em vez de caminhos FUSE."
 
-#: ../../sandbox-permissions.rst:208
+#: ../../sandbox-permissions.rst:212
 msgid ""
 "``--filesystem=xdg-run/gvfs`` is necessary to give access to the FUSE "
 "mounts non-GIO and legacy applications can use. This is what will make "
@@ -560,15 +568,15 @@ msgstr ""
 "FUSE não-GIO e aplicativos legados podem usar. Isto é o que fará com que "
 "os arquivos nativos apareçam em ``/run/user/`id -u`/gvfs/``."
 
-#: ../../sandbox-permissions.rst:212
+#: ../../sandbox-permissions.rst:216
 msgid "Typical GNOME and GTK applications should use::"
 msgstr "Os aplicativos GNOME e GTK típicos devem usar::"
 
-#: ../../sandbox-permissions.rst:217
+#: ../../sandbox-permissions.rst:221
 msgid "Typical non-GNOME and non-GTK applications should use::"
 msgstr "Os aplicativos não-GNOME e não-GTK típicos devem usar::"
 
-#: ../../sandbox-permissions.rst:221
+#: ../../sandbox-permissions.rst:225
 msgid ""
 "No application should be using ``--talk-name=org.gtk.vfs`` in its "
 "manifest, as there are no D-Bus services named ``org.gtk.vfs``."
