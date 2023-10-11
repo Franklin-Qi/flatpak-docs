@@ -20,34 +20,34 @@ msgstr ""
 
 #: ../../tips-and-tricks.rst:2
 msgid "Tips and Tricks"
-msgstr "技巧与窍门"
+msgstr "技巧"
 
 #: ../../tips-and-tricks.rst:4
 msgid "This page explains a few useful features of the Flatpak CLI."
-msgstr ""
+msgstr "本页介绍了 Flatpak CLI 的一些有用功能。"
 
 #: ../../tips-and-tricks.rst:8
 msgid "Testing an app with a different runtime"
-msgstr ""
+msgstr "使用不同的运行时测试应用程序"
 
 #: ../../tips-and-tricks.rst:10
 msgid ""
 "You can (for testing) run an application with a different runtime than it"
 " typically uses.  For instance, to run stable gedit with the latest "
 "unstable gnome runtime you can do::"
-msgstr ""
+msgstr "您可以（为了测试）使用与通常使用的运行时不同的运行时来运行应用程序。 例如，要使用最新的不稳定 gnome 运行时运行稳定的 gedit，您可以执行以下操作："
 
 #: ../../tips-and-tricks.rst:16
 msgid ""
 "You can also use a completely different runtime (but same version "
 "number)::"
-msgstr ""
+msgstr "您还可以使用完全不同的运行时（但版本号相同）："
 
 #: ../../tips-and-tricks.rst:20
 msgid ""
 "If you just want to use the sdk instead of the platform like the above, a"
 " better approach is to use ``-d``."
-msgstr ""
+msgstr "如果你只是想使用sdk而不是像上面那样的平台，更好的方法是使用 ``-d`` 。"
 
 #: ../../tips-and-tricks.rst:25
 msgid ""

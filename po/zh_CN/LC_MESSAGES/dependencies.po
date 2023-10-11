@@ -69,7 +69,6 @@ msgid ""
 msgstr "运行时需要定期维护，应用程序开发人员通常不应该考虑创建自己的运行时。"
 
 #: ../../dependencies.rst:32
-#, fuzzy
 msgid ""
 "Runtimes are automatically installed for users when they install an "
 "application, and build tools can also automatically install them for you "
@@ -145,7 +144,6 @@ msgid "Base apps"
 msgstr "框架应用"
 
 #: ../../dependencies.rst:75
-#, fuzzy
 msgid ""
 "Runtimes and bundling are the two main ways in which dependencies are "
 "handled with Flatpak. They allow applications to rely on stable "
@@ -162,7 +160,6 @@ msgid ""
 msgstr "可是，在某些情况下，依赖是一个更大的框架或者工具集，它不适合放进运行时，但手工捆绑成一系列单独的模块也很麻烦。所以有了 *base apps* 。"
 
 #: ../../dependencies.rst:84
-#, fuzzy
 msgid ""
 "Base apps contain collections of bundled dependencies which can then be "
 "bundled as part of an application. They don't get rebuilt as part of the "
@@ -170,7 +167,7 @@ msgid ""
 "large dependencies). And because each base app is only built once, it is "
 "guaranteed to be identical wherever it is used, so it will only be saved "
 "once on disk."
-msgstr ""
+msgstr "基础应用程序包含捆绑依赖项的集合，然后可以将其捆绑为应用程序的一部分。 它们不会作为构建过程的一部分进行重建，这使得构建速度更快（特别是在捆绑大型依赖项时）。 而且由于每个基础应用程序仅构建一次，因此无论在何处使用它都保证是相同的，因此它只会在磁盘上保存一次。"
 "base "
 "apps包含了一个捆绑好的依赖的集合，这些依赖可以作为应用的一部分被捆绑。他们不会在构建过程中被重建，可以使得构建更快（特别是在构建大型的依赖时）。由于每个base"
 " app只构建一次，可以保证无论什么时候使用都是一样的，所以它只在磁盘保存一份。"

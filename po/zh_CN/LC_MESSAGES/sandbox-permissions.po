@@ -29,13 +29,12 @@ msgid ""
 msgstr "flatpak的一个主要目标就是通过应用间的隔离来提高桌面系统的安全性。这通过使用沙箱来实现，默认地，应用运行的环境对主机的访问很有限。这包括："
 
 #: ../../sandbox-permissions.rst:9
-#, fuzzy
 msgid ""
 "No access to any host files except the runtime, the app, "
 "``~/.var/app/$FLATPAK_ID``, and ``$XDG_RUNTIME_DIR/app/$FLATPAK_ID``. "
 "Only the latter two being writable."
 msgstr ""
-"无法访问除runtime、app目录和 ``~/.var/app/$APPID`` 目录以外的文件。而且只有最后一个目录（译者注：即 "
+"无法访问除runtime、app目录和 ``~/.var/app/$APPID`` 目录以外的文件。而且只有最后一个目录（即 "
 "``~/.var/app/$APPID`` 目录）有写权限。"
 
 #: ../../sandbox-permissions.rst:12
@@ -44,7 +43,7 @@ msgstr "无法访问网络。"
 
 #: ../../sandbox-permissions.rst:13
 msgid "No access to any device nodes (apart from ``/dev/null``, etc)."
-msgstr "无法访问任何设备节点的（除了 ``/dev/null`` ，等等）。（译者注：可能有访问所有null设备的权限）"
+msgstr "无法访问任何设备节点的（除了 ``/dev/null`` ，等等）。（可能有访问所有null设备的权限）"
 
 #: ../../sandbox-permissions.rst:14
 msgid "No access to processes outside the sandbox."
@@ -78,10 +77,9 @@ msgstr ""
 
 #: ../../sandbox-permissions.rst:27
 msgid "Portals"
-msgstr "门户（译者注：英文portals）"
+msgstr "Portals"
 
 #: ../../sandbox-permissions.rst:29
-#, fuzzy
 msgid ""
 "Portals have already been mentioned in :doc:`basic-concepts`. They are a "
 "framework for providing access to resources outside of the sandbox, "
@@ -132,10 +130,9 @@ msgid ""
 "This approach enables applications to avoid having to configure blanket "
 "access to large amounts of data or services and gives users control over "
 "what their applications have access to."
-msgstr "这种方式使得应用在需要访问大量数据或服务时避免重复配置， 也让用户可以掌控（译者注：知悉，了解）他们的应用的访问权限。"
+msgstr "这种方式使得应用在需要访问大量数据或服务时避免重复配置， 也让用户可以掌控他们的应用的访问权限。"
 
 #: ../../sandbox-permissions.rst:51
-#, fuzzy
 msgid ""
 "Interface toolkits like GTK3 and Qt5 implement transparent support for "
 "portals, meaning that applications don't need to do any additional work "
@@ -187,7 +184,6 @@ msgid "``--socket=x11`` - show windows using X11"
 msgstr " ``--socket=x11``  - 用X11显示窗口"
 
 #: ../../sandbox-permissions.rst:79
-#, fuzzy
 msgid ""
 "``--socket=fallback-x11`` - show windows using X11, if Wayland is not "
 "available, overrides ``x11`` socket permission. Note that you must still "
@@ -242,7 +238,6 @@ msgid "**Talk**"
 msgstr "**Talk**"
 
 #: ../../sandbox-permissions.rst:103
-#, fuzzy
 msgid ""
 "Talk permissions can be freely used, although it is recommended to use "
 "the minimum required."
@@ -253,7 +248,6 @@ msgid "Filesystem access"
 msgstr "文件系统访问"
 
 #: ../../sandbox-permissions.rst:109
-#, fuzzy
 msgid ""
 "It is common for applications to require access to different parts of the"
 " host filesystem, and Flatpak provides a flexible set of options for "
@@ -279,7 +273,6 @@ msgid "``--filesystem=xdg-download`` - access a specific XDG folder"
 msgstr "``--filesystem=xdg-download``  - 访问特定的XDG文件夹"
 
 #: ../../sandbox-permissions.rst:119
-#, fuzzy
 msgid ""
 "As a general rule, Filesystem access should be limited as much as "
 "possible. This includes:"
@@ -302,7 +295,6 @@ msgid ""
 msgstr "如果一定要访问home目录，只使用XDG目录访问。"
 
 #: ../../sandbox-permissions.rst:128
-#, fuzzy
 msgid ""
 "The full list of available filesystem options can be found in the :doc"
 ":`sandbox-permissions-reference`. Other filesystem access guidelines "
@@ -367,7 +359,7 @@ msgstr "许多目录被屏蔽的原因是他们已经在沙箱里存在了：例
 msgid ""
 "The ``home`` permission also has exceptions as it does not grant access "
 "to the subdirectories for other applications in ``~/.var/app/``."
-msgstr ""
+msgstr "``home`` 权限也有例外，因为它不会授予 ``~/.var/app/`` 中其他应用程序子目录的访问权限。"
 
 #: ../../sandbox-permissions.rst:161
 msgid "Device access"
@@ -387,14 +379,14 @@ msgstr "dconf访问"
 msgid ""
 "As of xdg-desktop-portal 1.1.0 and glib 2.60.5 (in the runtime) you do "
 "not need direct DConf access in most cases."
-msgstr ""
+msgstr "从 xdg-desktop-portal 1.1.0 和 glib 2.60.5（在运行时）开始，大多数情况下您不需要直接访问 DConf。"
 
 #: ../../sandbox-permissions.rst:172
 msgid ""
 "As of now this glib version is included in "
 "``org.freedesktop.Platform//19.08`` and ``org.gnome.Platform//3.34`` and "
 "newer."
-msgstr ""
+msgstr "截至目前，这个 glib 版本包含在 ``org.freedesktop.Platform//19.08`` 和 ``org.gnome.Platform//3.34`` 及更高版本中。"
 
 #: ../../sandbox-permissions.rst:175
 msgid ""
@@ -403,17 +395,17 @@ msgid ""
 "adding ``--metadata=X-DConf=migrate-path=/org/example/foo/`` to ``finish-"
 "args``. The path must be similar to your app-id or it will not be allowed"
 " (case is ignored and ``_`` and ``-`` are treated equal)."
-msgstr ""
+msgstr "如果应用程序在这些运行时之前已存在，您可以通过添加 ``--metadata=X-DConf=migrate-path=/org/example/foo`` 到 ``finish-args`` 告诉 Flatpak (>= 1.3.4) 将主机上的 DConf 设置迁移到沙箱中。 该路径必须与您的应用程序 ID 相似，否则将不允许（大小写被忽略，``_`` 和 ``-`` 被同等对待）。"
 
 #: ../../sandbox-permissions.rst:182
 msgid ""
 "If you are targeting older runtimes or require direct DConf access for "
 "other reasons you can use these permissions::"
-msgstr ""
+msgstr "如果您的目标是较旧的运行时或出于其他原因需要直接访问 DConf，您可以使用这些权限："
 
 #: ../../sandbox-permissions.rst:190
 msgid "With those permissions glib will continue using dconf directly."
-msgstr ""
+msgstr "有了这些权限，glib 将继续直接使用 dconf。"
 
 #: ../../sandbox-permissions.rst:192
 msgid ""
@@ -421,12 +413,11 @@ msgid ""
 "it you will have to build the `dconf "
 "<https://download.gnome.org/sources/dconf/>`_ GIO module and set "
 "``--env=GIO_EXTRA_MODULES=/app/lib/gio/modules/``."
-msgstr ""
+msgstr "如果您使用不再构建 dconf 的较新运行时，但仍然需要它，则必须构建 `dconf <https://download.gnome.org/sources/dconf/>`_   GIO 模块并设置 ``--env=GIO_EXTRA_MODULES=/app/lib/gio/modules/`` 。"
 
 #: ../../sandbox-permissions.rst:197
-#, fuzzy
 msgid "gvfs access"
-msgstr "dconf访问"
+msgstr "gvfs 访问"
 
 #: ../../sandbox-permissions.rst:199
 msgid ""
@@ -434,47 +425,47 @@ msgid ""
 "to communicate, rather than an abstract socket so that the gvfs "
 "infrastructure still works when network support is disabled in the "
 "application's sandbox."
-msgstr ""
+msgstr "从 gvfs 1.48 开始，gvfs 守护进程和应用程序使用磁盘套接字（而不是抽象套接字）进行通信，以便在应用程序的沙箱中禁用网络支持时 gvfs 基础设施仍然可以工作。"
 
 #: ../../sandbox-permissions.rst:203
 msgid ""
 "A number of different options need to be passed depending on the "
 "application's use of gvfs."
-msgstr ""
+msgstr "根据应用程序对 gvfs 的使用，需要传递许多不同的选项。"
 
 #: ../../sandbox-permissions.rst:206
 msgid ""
 "``--talk-name=org.gtk.vfs.*`` is necessary to talk to the gvfs daemons "
 "over D-Bus and list mounts using the GIO APIs."
-msgstr ""
+msgstr "``--talk-name=org.gtk.vfs.*`` 是通过 D-Bus 与 gvfs 守护进程对话并使用 GIO API 列出挂载所必需的。"
 
 #: ../../sandbox-permissions.rst:209
 msgid ""
 "``--filesystem=xdg-run/gvfsd`` is necessary to use the GIO APIs to list "
 "and access non-native files using the GIO APIs, using URLs rather than "
 "FUSE paths."
-msgstr ""
+msgstr "``--filesystem=xdg-run/gvfsd`` 对于使用 GIO API 来列出和访问使用 GIO API 的非本机文件（使用 URL 而不是 FUSE 路径）是必需的。"
 
 #: ../../sandbox-permissions.rst:212
 msgid ""
 "``--filesystem=xdg-run/gvfs`` is necessary to give access to the FUSE "
 "mounts non-GIO and legacy applications can use. This is what will make "
 "native files appear under ``/run/user/`id -u`/gvfs/``."
-msgstr ""
+msgstr "``--filesystem=xdg-run/gvfs`` 是访问非 GIO 和旧应用程序可以使用的 FUSE 安装所必需的。 这将使本机文件出现在 ``/run/user/`id -u`/gvfs/`` 下。"
 
 #: ../../sandbox-permissions.rst:216
 msgid "Typical GNOME and GTK applications should use::"
-msgstr ""
+msgstr "典型的 GNOME 和 GTK 应用程序应使用："
 
 #: ../../sandbox-permissions.rst:221
 msgid "Typical non-GNOME and non-GTK applications should use::"
-msgstr ""
+msgstr "典型的非 GNOME 和非 GTK 应用程序应使用："
 
 #: ../../sandbox-permissions.rst:225
 msgid ""
 "No application should be using ``--talk-name=org.gtk.vfs`` in its "
 "manifest, as there are no D-Bus services named ``org.gtk.vfs``."
-msgstr ""
+msgstr "任何应用程序都不应在其清单中使用 ``--talk-name=org.gtk.vfs``，因为没有名为 ``org.gtk.vfs`` 的 D-Bus 服务。"
 
 #~ msgid ""
 #~ "If an application uses ``$TMPDIR`` to"

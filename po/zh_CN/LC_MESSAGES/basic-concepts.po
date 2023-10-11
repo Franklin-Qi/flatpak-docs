@@ -61,12 +61,10 @@ msgid ""
 msgstr "如果一个应用程序要求的依赖不在他的运行时里，这些依赖可以作为应用程序的一部分。这给了应用程序开发人员关于他们使用的依赖关系的灵活性，包括使用："
 
 #: ../../basic-concepts.rst:32
-#, fuzzy
 msgid "libraries that aren't available in a runtime"
 msgstr "某个发行版或运行时不可用的库"
 
 #: ../../basic-concepts.rst:33
-#, fuzzy
 msgid "different versions of libraries from the ones that are in a runtime"
 msgstr "某个发行版或运行时包含的库的另一版本"
 

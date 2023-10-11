@@ -28,7 +28,6 @@ msgid ""
 msgstr "这个教程提供了一个构建flatpak的简单介绍。你可以从它学习到如何创建一个基础的可以被安装和运行的flatpak应用。"
 
 #: ../../first-build.rst:8
-#, fuzzy
 msgid ""
 "In order to complete this tutorial, you should have followed the `setup "
 "guide on flatpak.org <https://flatpak.org/setup/>`_. You also need to "
@@ -54,11 +53,10 @@ msgid ""
 msgstr "flatpak要求每个应用指明一个runtime，作为它的基本依赖。每个runtime有一个匹配的SDK（软件开发套件），包含了runtime里面的所有东西，加上头文件和开发工具。构建应用的时候需要这个SDK。"
 
 #: ../../first-build.rst:22
-#, fuzzy
 msgid ""
 "In this tutorial we will use the Freedesktop 22.08 runtime and SDK. To "
 "install these, run::"
-msgstr "在这个教程中，我们将使用Freedesktop 1.6 runtime和SDK。安装这些，运行::"
+msgstr "在这个教程中，我们将使用Freedesktop 1.6 runtime和SDK。安装这些，运行:"
 
 #: ../../first-build.rst:28
 msgid "2. Create the app"
@@ -89,7 +87,6 @@ msgstr ""
 "world应用添加一个清单文件，添加如下内容到一个空文件："
 
 #: ../../first-build.rst:61
-#, fuzzy
 msgid ""
 "Now save the file alongside ``hello.sh`` and call it "
 "``org.flatpak.Hello.yml``."
@@ -145,11 +142,10 @@ msgid "6. Put the app in a repository"
 msgstr "6.将应用放到仓库"
 
 #: ../../first-build.rst:97
-#, fuzzy
 msgid ""
 "If you want to share the application you can put it in a repository. This"
 " is done by passing the ``--repo`` argument to ``flatpak-builder``::"
-msgstr "在你运行和安装这个应用之前，它首先需要被放到一个仓库里。通过传递 ``--repo`` 参数给 ``flatpak-builder`` ::"
+msgstr "在你运行和安装这个应用之前，它首先需要被放到一个仓库里。通过传递 ``--repo`` 参数给 ``flatpak-builder`` :"
 
 #: ../../first-build.rst:103
 msgid ""
@@ -168,7 +164,7 @@ msgid ""
 "update-repo repo``. For more information how to publish to application "
 "stores see `Appdata files <https://docs.flatpak.org/en/latest"
 "/freedesktop-quick-reference.html#appdata-files>`_."
-msgstr ""
+msgstr "为了让您的应用程序在使用本地存储库进行测试时显示在应用程序商店中，您可能必须运行 ``flatpak build-update-repo repo``。 有关如何发布到应用程序商店的更多信息，请参阅 `Appdata 文件 <https://docs.flatpak.org/en/latest/freedesktop-quick-reference.html#appdata-files>`_ 。"
 
 #: ../../first-build.rst:113
 msgid "7. Install the app"

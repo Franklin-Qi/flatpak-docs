@@ -88,7 +88,6 @@ msgid "The source code for each module is built and installed"
 msgstr "构建和安装每个模块的源代码"
 
 #: ../../building-introduction.rst:38
-#, fuzzy
 msgid "The build is finished by setting sandbox permissions"
 msgstr "设置沙箱的权限并完成构建"
 
@@ -121,7 +120,6 @@ msgid ""
 msgstr "这些SDK类似与应用所运行在的常规运行时。不同的是，这些SDK还包含了构建一个应用需要的所有开发资源和工具，例如构建和打包工具、头文件、编译器和调试器"
 
 #: ../../building-introduction.rst:55
-#, fuzzy
 msgid ""
 "Each runtime has an accompanying SDK. For example, there is both a GNOME "
 "43 runtime and a GNOME 43 SDK. Applications that use the runtime are "
@@ -131,7 +129,6 @@ msgstr ""
 "SDK同时存在。使用这个运行时的是用这个对应的SDK构建的。"
 
 #: ../../building-introduction.rst:59
-#, fuzzy
 msgid ""
 "Like runtimes, SDKs will sometimes be automatically installed for you, "
 "but if you do need to manually install them, they are installed in the "

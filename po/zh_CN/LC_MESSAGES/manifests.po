@@ -20,7 +20,6 @@ msgid "Manifests"
 msgstr "清单"
 
 #: ../../manifests.rst:4
-#, fuzzy
 msgid ""
 "The input to ``flatpak-builder`` is a JSON or YAML file that describes "
 "the parameters for building an application, as well as instructions for "
@@ -40,7 +39,6 @@ msgstr ""
 "并且熟悉 :doc:`flatpak-builder` 。"
 
 #: ../../manifests.rst:13
-#, fuzzy
 msgid ""
 "Manifest files should be named using the application ID. For example, the"
 " manifest file for GNOME Dictionary is named "
@@ -90,14 +88,12 @@ msgid "File renaming"
 msgstr "文件重命名"
 
 #: ../../manifests.rst:45
-#, fuzzy
 msgid ""
 "Exports are application files that are made available to the host, and "
 "include things like the application's ``.desktop`` file and icon."
 msgstr "正如 :doc:`introduction` 中描述的，导出是对主机可用的应用文件，包含像 ``.desktop`` 文件和图标文件之类的。"
 
 #: ../../manifests.rst:48
-#, fuzzy
 msgid ""
 "The names of files that are exported by a Flatpak must be prefixed using "
 "the application ID, such as ``org.gnome.Dictionary.desktop``. The best "
@@ -158,7 +154,6 @@ msgid ""
 msgstr "finishing清单节点使用 ``finish-args`` 属性，可以在Dictionary的清单文件见到："
 
 #: ../../manifests.rst:93
-#, fuzzy
 msgid ""
 "Guidance on which permissions to use can be found in the :doc:`sandbox-"
 "permissions`, and a full list of ``finish-args`` options can be found in "
@@ -173,11 +168,11 @@ msgid ""
 "If you're wondering about the last finish arg, see `this blog post "
 "<https://blogs.gnome.org/mclasen/2019/07/12/settings-in-a-sandbox-"
 "world/>`__."
-msgstr ""
+msgstr "如果您想知道最后一个完成参数，请参阅 `此博客文章 <https://blogs.gnome.org/mclasen/2019/07/12/settings-in-a-sandbox-world/>`_ 。"
 
 #: ../../manifests.rst:101
 msgid "Cleanup"
-msgstr "cleanup"
+msgstr "Cleanup"
 
 #: ../../manifests.rst:103
 msgid ""
@@ -185,11 +180,11 @@ msgid ""
 "process that are not wanted as part of the application, such as headers "
 "or developer documentation. Two properties in the manifest file are used "
 "for this."
-msgstr ""
+msgstr "cleanup 属性可用于删除构建过程中生成的、不需要作为应用程序一部分的文件，例如标头或开发人员文档。 清单文件中的两个属性用于此目的。"
 
 #: ../../manifests.rst:107
 msgid "First, a list of filename patterns can be included::"
-msgstr ""
+msgstr "首先，可以包含文件名模式列表："
 
 #: ../../manifests.rst:114
 msgid ""
@@ -246,12 +241,10 @@ msgid "``bzr`` - Bazaar repositories"
 msgstr "``bzr``  - Bazaar 仓库"
 
 #: ../../manifests.rst:157
-#, fuzzy
 msgid "``file`` - local/remote files (these are copied into the source directory)"
 msgstr "``file``  - 本地文件（这些复制到源码目录）"
 
 #: ../../manifests.rst:158
-#, fuzzy
 msgid "``dir`` - local directories (these are copied into the source directory)"
 msgstr "``dir`` - 本地目录 (这些将复制到源码目录)"
 
@@ -304,14 +297,12 @@ msgid "`cmake <https://cmake.org/>`_"
 msgstr "`cmake <https://cmake.org/>`_"
 
 #: ../../manifests.rst:176
-#, fuzzy
 msgid "`cmake-ninja <https://cmake.org/cmake/help/v3.0/generator/Ninja.html>`_"
 msgstr ""
 " `cmake-ninja <https://cmake.org/cmake/help/v3.0/generator/Ninja.html>`_"
 "  ,  `meson <http://mesonbuild.com/>`_ "
 
 #: ../../manifests.rst:177
-#, fuzzy
 msgid "`meson <https://mesonbuild.com/>`_"
 msgstr "`cmake <https://cmake.org/>`_"
 
@@ -331,34 +322,34 @@ msgstr "一个“简单的”构建方法，需要指定一系列命令。"
 
 #: ../../manifests.rst:185
 msgid "Shared Modules"
-msgstr ""
+msgstr "共享模块"
 
 #: ../../manifests.rst:187
 msgid ""
 "`Shared Modules (or shared-modules) <https://github.com/flathub/shared-"
 "modules>`_ is a repository containing various manifests to build common "
 "libraries. It is intended to be used as a git submodule."
-msgstr ""
+msgstr "`共享模块（或共享模块） <https://github.com/flathub/shared-modules>`_ 是一个存储库，其中包含用于构建公共库的各种清单。 它旨在用作 git 子模块。"
 
 #: ../../manifests.rst:189
 msgid "To add it to your repository, run this command:"
-msgstr ""
+msgstr "要将其添加到您的存储库，请运行以下命令："
 
 #: ../../manifests.rst:195
 msgid "Then, add whichever module you want. In this example, we will use `gtk2`:"
-msgstr ""
+msgstr "然后，添加您想要的模块。 在此示例中，我们将使用 `gtk2`："
 
 #: ../../manifests.rst:202
 msgid "To update the submodule, run this command:"
-msgstr ""
+msgstr "要更新子模块，请运行以下命令："
 
 #: ../../manifests.rst:208
 msgid "To remove the submodule, run these commands:"
-msgstr ""
+msgstr "要删除子模块，请运行以下命令："
 
 #: ../../manifests.rst:218
 msgid "Flatpak Builder Tools"
-msgstr ""
+msgstr "Flatpak 构建工具"
 
 #: ../../manifests.rst:220
 msgid ""
@@ -367,7 +358,7 @@ msgid ""
 "scripts to aid using `flatpak-builder`. In this repository, each "
 "directory contains instructions to generate a manifest for the respective"
 " platform."
-msgstr ""
+msgstr "`Flatpak Builder Tools（或 flatpak-builder-tools） <https://github.com/flatpak/flatpak-builder-tools>`_ 是帮助使用 flatpak-builder 的脚本集合。 在此存储库中，每个目录都包含为相应平台生成清单的指令。"
 
 #: ../../manifests.rst:223
 msgid "Example manifests"
@@ -379,7 +370,7 @@ msgid ""
 "<https://github.com/flathub/org.gnome.Dictionary/blob/master/org.gnome.Dictionary.yml>`_."
 " It is also possible to browse `all the manifests hosted by Flathub "
 "<https://github.com/flathub>`_."
-msgstr ""
+msgstr "从 Git 构建的 `GNOME Dictionary <https://github.com/flathub/org.gnome.Dictionary/blob/master/org.gnome.Dictionary.yml>`_ 的完整清单。 还可以浏览 `Flathub 托管的所有清单 <https://github.com/flathub>`_ 。"
 
 #~ msgid ""
 #~ "The cleanup property can be used "

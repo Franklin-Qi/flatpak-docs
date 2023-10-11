@@ -19,46 +19,45 @@ msgid "Introduction to Flatpak"
 msgstr "Flatpak简介"
 
 #: ../../introduction.rst:4
-#, fuzzy
 msgid ""
 "Flatpak is a framework for distributing desktop applications across "
 "various Linux distributions. It has been created by developers who have a"
 " long history of working on the Linux desktop, and is run as an "
 "independent open source project."
-msgstr "Flatpak是一个用于在Linux上分发桌面应用程序的框架。 它由具有长期工作在Linux桌面的开发人员创建，并作为独立的开源项目运行。"
+msgstr "Flatpak 是一个用于在各种 Linux 发行版上分发桌面应用程序的框架。 它是由长期从事 Linux 桌面工作的开发人员创建的，并作为独立的开源项目运行。"
 
 #: ../../introduction.rst:9
 msgid "Terminology"
-msgstr ""
+msgstr "术语"
 
 #: ../../introduction.rst:11
 msgid ""
 "Flatpak: a system for building, distributing, and running sandboxed "
 "desktop applications on Linux."
-msgstr ""
+msgstr "Flatpak：一个用于在 Linux 上构建、分发和运行沙盒桌面应用程序的系统。"
 
 #: ../../introduction.rst:12
 msgid ""
 "Flatpak application: these are the applications the user installs via the"
 " ``flatpak`` command or via a different UI like GNOME Software or KDE "
 "Discover."
-msgstr ""
+msgstr "Flatpak application：这些是用户通过 flatpak 命令或通过不同的 UI（如 GNOME Software 或 KDE Discover）安装的应用程序。"
 
 #: ../../introduction.rst:14
 msgid ""
 "Runtime: also called platforms, these are integrated platforms to provide"
 " basic utilities needed for a Flatpak application to work."
-msgstr ""
+msgstr "Runtime：也称为平台，这些是集成平台，提供 Flatpak 应用程序工作所需的基本实用程序。"
 
 #: ../../introduction.rst:16
 msgid "BaseApp: these are integrated platforms for frameworks like Electron."
-msgstr ""
+msgstr "BaseApp：这些是 Electron 等框架的集成平台。"
 
 #: ../../introduction.rst:17
 msgid ""
 "Flatpak bundle: a specific single-file export format which contains a "
 "Flatpak app or runtime."
-msgstr ""
+msgstr "Flatpak bundle：一种特定的单文件导出格式，其中包含 Flatpak 应用程序或运行时。"
 
 #: ../../introduction.rst:20
 msgid "Target audience"
@@ -93,13 +92,13 @@ msgstr "Flatpak提出的唯一技术要求是应用程序遵循少量的Freedesk
 
 #: ../../introduction.rst:37
 msgid "Issues of current model of packaging"
-msgstr ""
+msgstr "当前包装模式存在的问题"
 
 #: ../../introduction.rst:39
 msgid ""
 "It is important to understand the problems of the current model of "
 "packaging applications to understand the existence of Flatpak:"
-msgstr ""
+msgstr "了解当前包装应用模型的问题对于了解 Flatpak 的存在非常重要："
 
 #: ../../introduction.rst:42
 msgid ""
@@ -111,7 +110,7 @@ msgid ""
 "ignore most distributions and package and support a couple of "
 "distributions. This makes the Linux desktop a difficult platform for "
 "software vendors to target."
-msgstr ""
+msgstr "**重复的工作打包应用程序**：许多 Linux 发行版都带有自己的包管理器、包格式和存储库。 这需要很多维护人员将相同的应用程序打包在不同的发行版中，或者应用程序开发人员学习每种格式的语言，然后将应用程序打包在这些发行版中，或者忽略大多数发行版并打包并支持几个发行版。 这使得 Linux 桌面成为软件供应商难以瞄准的平台。"
 
 #: ../../introduction.rst:48
 msgid ""
@@ -120,7 +119,7 @@ msgid ""
 " in a specific distribution, the user will have to rely on manually "
 "downloading the archive of the application, extracting it and hoping the "
 "application will launch."
-msgstr ""
+msgstr "**仅限于打包的应用程序**：并非所有应用程序在每个 Linux 发行版中都可用。 如果某个应用程序在特定发行版中不可用，则用户将不得不手动下载该应用程序的存档，将其解压缩并希望该应用程序能够启动。"
 
 #: ../../introduction.rst:52
 msgid ""
@@ -128,7 +127,7 @@ msgid ""
 "the number of distributions that have the needed applications for them to"
 " properly setup their workflow. This reduces the amount of distributions "
 "that can be suitable for a user."
-msgstr ""
+msgstr "**仅限于具有应用程序的发行版**：用户仅限于拥有正确设置工作流程所需应用程序的发行版数量。 这减少了适合用户的发行版的数量。"
 
 #: ../../introduction.rst:56
 msgid ""
@@ -136,7 +135,7 @@ msgid ""
 "have to spend a lot of time packaging applications to make the "
 "distribution suitable for the end user, instead of focusing on their end "
 "goals. This delays the progress of each distribution."
-msgstr ""
+msgstr "**操作系统领域难以创新**：发行版的维护者必须花费大量时间打包应用程序以使发行版适合最终用户，而不是专注于他们的最终目标。 这会延迟每次分发的进度。"
 
 #: ../../introduction.rst:59
 msgid ""
@@ -145,14 +144,14 @@ msgid ""
 "hindered by the different environments that applications are run in, and "
 "application developers often have little control over how their "
 "application is packaged by distributions."
-msgstr ""
+msgstr "**旧的和过时的软件包**：LTS 发行版通常具有非常旧版本的应用程序本机打包。 应用程序运行的不同环境阻碍了错误的重现性，并且应用程序开发人员通常无法控制发行版打包其应用程序的方式。"
 
 #: ../../introduction.rst:64
 msgid ""
 "Flatpak strives to fix the issues listed above, by conveniently enabling "
 "developers to distribute applications from one source and to target the "
 "entire Linux desktop."
-msgstr ""
+msgstr "Flatpak 致力于解决上述问题，让开发人员能够方便地从一个来源分发应用程序并针对整个 Linux 桌面。"
 
 #: ../../introduction.rst:68
 msgid "Reasons to use Flatpak"
@@ -160,7 +159,7 @@ msgstr "使用Flatpak的理由"
 
 #: ../../introduction.rst:70
 msgid "Flatpak has some major advantages over most system package managers:"
-msgstr ""
+msgstr "与大多数系统包管理器相比，Flatpak 具有一些主要优势："
 
 #: ../../introduction.rst:72
 msgid ""
@@ -169,26 +168,26 @@ msgid ""
 "systemd-free distributions, distributions with a read-only operating "
 "system (OS), and various architectures without the developer needing the "
 "relevant hardware on hand."
-msgstr ""
+msgstr "**通用性**：Flatpak 允许应用程序在几乎任何 Linux 发行版上安装和运行。 这包括非 GNU 发行版、无 systemd 发行版、具有只读操作系统 (OS) 的发行版以及开发人员不需要手头相关硬件的各种体系结构。"
 
 #: ../../introduction.rst:76
 msgid ""
 "**Space for innovations**: Flatpak facilitates distribution maintainers "
 "to focus on their goals to innovate their distribution."
-msgstr ""
+msgstr "**创新空间**：Flatpak 帮助发行维护人员专注于其发行创新的目标。"
 
 #: ../../introduction.rst:78
 msgid ""
 "**Stability**: breakage in a Flatpak application will not risk the system"
 " from breaking. This is because Flatpak applications and runtimes are "
 "contained to not interfere with the system altogether."
-msgstr ""
+msgstr "**稳定性**：Flatpak 应用程序的损坏不会带来系统损坏的风险。 这是因为 Flatpak 应用程序和运行时被包含在内，不会完全干扰系统。"
 
 #: ../../introduction.rst:81
 msgid ""
 "**Rootless install**: elevated privileges are not required when "
 "installing a Flatpak application or a runtime."
-msgstr ""
+msgstr "**无root安装**：安装 Flatpak 应用程序或运行时时不需要提升权限。"
 
 #: ../../introduction.rst:83
 msgid ""
@@ -197,49 +196,46 @@ msgid ""
 "another. This is achieved using sandboxing and means that, by default, "
 "applications that are run with Flatpak have limited access to the host "
 "environment."
-msgstr ""
+msgstr "**沙盒应用程序**：Flatpak 的主要目标之一是通过将应用程序彼此隔离来提高桌面系统的安全性。 这是通过沙箱实现的，这意味着默认情况下使用 Flatpak 运行的应用程序对主机环境的访问受到限制。"
 
 #: ../../introduction.rst:87
 msgid ""
 "Flatpak has some major advantages over other universal approaches to "
 "distributing applications on Linux:"
-msgstr ""
+msgstr "与在 Linux 上分发应用程序的其他通用方法相比，Flatpak 具有一些主要优势："
 
 #: ../../introduction.rst:90
-#, fuzzy
 msgid ""
 "**Decentralized by design**: while Flatpak does provide a centralized "
 "service for distributing applications, it also allows decentralized "
 "hosting and distribution, so that application developers or downstreams "
 "can host their own applications and application repositories."
-msgstr "最后，虽然Flatpak确实为分发应用程序提供了中心化服务，但它还允许分布式托管和分发，以便应用开发者或下游可以托管他们自己的应用和应用仓库。"
+msgstr "**去中心化设计**：虽然Flatpak确实为分发应用程序提供了集中式服务，但它也允许去中心化托管和分发，以便应用程序开发人员或下游可以托管自己的应用程序和应用程序存储库。"
 
 #: ../../introduction.rst:94
-#, fuzzy
 msgid ""
 "**Desktop integration**: Flatpak also offers native integration for the "
 "main Linux desktops, so that users can easily browse, install, run and "
 "use Flatpak applications through their existing desktop environment and "
 "tools."
-msgstr "Flatpak还为主要Linux桌面提供本机集成，以便用户可以通过现有的桌面环境和工具轻松浏览，安装，运行和使用Flatpak应用程序。"
+msgstr "**桌面集成**：Flatpak还为主要Linux桌面提供原生集成，以便用户可以通过现有的桌面环境和工具轻松浏览、安装、运行和使用Flatpak应用程序。"
 
 #: ../../introduction.rst:97
 msgid ""
 "**Space efficiency**: Flatpak deduplicates libraries and other files used"
 " by multiple applications to save megabytes or even gigabytes worth of "
 "storage depending on the amount of applications installed."
-msgstr ""
+msgstr "**空间效率**：Flatpak 对多个应用程序使用的库和其他文件进行重复数据删除，以节省兆字节甚至千兆字节的存储空间，具体取决于安装的应用程序数量。"
 
 #: ../../introduction.rst:100
 msgid "**Delta updates**: only changed files are downloaded for updates."
-msgstr ""
+msgstr "**增量更新**：仅下载更改的文件进行更新。"
 
 #: ../../introduction.rst:102
 msgid "Other benefits for developers include:"
 msgstr "其他开发者可以得益的地方："
 
 #: ../../introduction.rst:104
-#, fuzzy
 msgid ""
 "**Forward-compatibility**: the same Flatpak application can be run on "
 "different versions of the same distribution, including versions that "
@@ -248,7 +244,6 @@ msgid ""
 msgstr "**向前兼容**：相同的Flatpak可以在同一发行版的不同版本上运行，包括尚未发布的版本。 这不需要应用程序开发人员进行任何更改或管理。"
 
 #: ../../introduction.rst:107
-#, fuzzy
 msgid ""
 "**Bundling**: this allows application developers to ship almost any "
 "dependency or library as part of their application. This gives complete "
@@ -256,21 +251,19 @@ msgid ""
 msgstr "**捆绑**：这允许应用程序开发人员将几乎任何依赖项或库作为其应用程序的一部分。 这样可以完全控制用于构建应用程序的软件。"
 
 #: ../../introduction.rst:110
-#, fuzzy
 msgid ""
 "**Consistent application environments**: because these are the same "
 "across devices, applications perform as intended. This also makes it "
 "easier to identify bugs and to do testing."
-msgstr "**一致的应用环境:** 因为程序跑在一样的环境中，他们会按预期执行，这使得查找bug和测试变得容易。"
+msgstr "**一致的应用环境**: 因为程序跑在一样的环境中，他们会按预期执行，这使得查找bug和测试变得容易。"
 
 #: ../../introduction.rst:113
 msgid ""
 "**Branches**: this allows developers to ship applications from different "
 "branches, e.g. ``stable``, ``beta``, etc. while retaining the same name."
-msgstr ""
+msgstr "分支：这允许开发人员从不同的分支发送应用程序，例如 stable、beta 等，同时保留相同的名称。"
 
 #: ../../introduction.rst:115
-#, fuzzy
 msgid ""
 "**Maintained platforms**: called runtimes, these contain collections of "
 "dependencies, which can be used by applications, and which can take a lot"
