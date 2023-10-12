@@ -342,7 +342,7 @@ msgstr "要删除子模块，请运行以下命令："
 
 #: ../../manifests.rst:218
 msgid "Flatpak Builder Tools"
-msgstr "Flatpak 构建工具"
+msgstr "Flatpak 构建工具"
 
 #: ../../manifests.rst:220
 msgid ""
