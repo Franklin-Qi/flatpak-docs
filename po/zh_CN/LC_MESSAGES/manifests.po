@@ -293,9 +293,7 @@ msgstr "`cmake <https://cmake.org/>`_"
 
 #: ../../manifests.rst:176
 msgid "`cmake-ninja <https://cmake.org/cmake/help/v3.0/generator/Ninja.html>`_"
-msgstr ""
-" `cmake-ninja <https://cmake.org/cmake/help/v3.0/generator/Ninja.html>`_"
-"  ,  `meson <http://mesonbuild.com/>`_ "
+msgstr "`cmake-ninja <https://cmake.org/cmake/help/v3.0/generator/Ninja.html>`_"
 
 #: ../../manifests.rst:177
 msgid "`meson <https://mesonbuild.com/>`_"
@@ -303,11 +301,11 @@ msgstr "`cmake <https://cmake.org/>`_"
 
 #: ../../manifests.rst:178
 msgid "`qmake <https://doc.qt.io/qt-5/qmake-overview.html>`_"
-msgstr ""
+msgstr "`qmake <https://doc.qt.io/qt-5/qmake-overview.html>`_"
 
 #: ../../manifests.rst:179
 msgid "the \"`Build API <https://github.com/cgwalters/build-api/>`_\""
-msgstr "\" `Build API <https://github.com/cgwalters/build-api/>`_ \""
+msgstr "`Build API <https://github.com/cgwalters/build-api/>`_ "
 
 #: ../../manifests.rst:181
 msgid ""
