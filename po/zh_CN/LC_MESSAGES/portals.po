@@ -4,7 +4,6 @@
 # This file is distributed under the same license as the Flatpak package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flatpak \n"
@@ -22,62 +21,62 @@ msgstr ""
 
 #: ../../portals.rst:2
 msgid "Portal support in GTK"
-msgstr ""
+msgstr "GTK 中的Portal支持"
 
 #: ../../portals.rst:4
 msgid ""
 "GTK will transparently use portals for some functionality when it detects"
 " that it is being used inside a Flatpak sandbox. Here are some hints for "
 "what GTK applications should do to benefit from this."
-msgstr ""
+msgstr "当 GTK 检测到在 Flatpak 沙箱中使用portals时，它会透明地使用portals来实现某些功能。 以下是 GTK 应用程序应采取哪些措施才能从中受益的一些提示。"
 
 #: ../../portals.rst:8
 msgid ""
 "Use ``g_get_user_config_dir()``, ``g_get_user_cache_dir()`` and "
 "``g_get_user_data_dir()`` to find the right place to store configuration "
 "and data"
-msgstr ""
+msgstr "使用 ``g_get_user_config_dir()``、``g_get_user_cache_dir()`` 和 ``g_get_user_data_dir()`` 查找存储配置和数据的正确位置"
 
 #: ../../portals.rst:11
 msgid ""
 "Use ``GtkFileChooserNative`` (or ``GtkFileChooserButton``) to open files."
 " As of `xdg-desktop-portal-gtk` 1.7.1 it can also open directories."
-msgstr ""
+msgstr "使用 ``GtkFileChooserNative``（或 ``GtkFileChooserButton``）打开文件。 从 `xdg-desktop-portal-gtk` 1.7.1 开始，它还可以打开目录。"
 
 #: ../../portals.rst:13
 msgid "Use ``GtkPrintOperation`` for printing"
-msgstr ""
+msgstr "使用``GtkPrintOperation``进行打印"
 
 #: ../../portals.rst:14
 msgid ""
 "Use ``gtk_show_uri_on_window()`` or "
 "``g_app_info_launch_default_for_uri()`` to open URIs"
-msgstr ""
+msgstr "使用 ``gtk_show_uri_on_window()`` 或 ``g_app_info_launch_default_for_uri()`` 打开 URI"
 
 #: ../../portals.rst:16
 msgid "Use ``gtk_application_inhibit()`` if you want to inhibit idle or logout"
-msgstr ""
+msgstr "如果您想禁止空闲或注销，请使用 ``gtk_application_inhibit()``"
 
 #: ../../portals.rst:17
 msgid "Use ``g_application_send_notification()`` to show notifications"
-msgstr ""
+msgstr "使用 ``g_application_send_notification()`` 显示通知"
 
 #: ../../portals.rst:18
 msgid ""
 "Use the ``GtkApplication::screensaver-active`` property to monitor "
 "scrensaver status"
-msgstr ""
+msgstr "使用 ``GtkApplication::screensaver-active`` 属性来监视 scrensaver 状态"
 
 #: ../../portals.rst:21
 msgid ""
 "Additionally, xdg-desktop-portal-gtk is required for GTK themes and "
 "fonts. It is also used as a fallback for the filepicker if the main xdg-"
 "desktop-portal implementation doesn't support filepicking."
-msgstr ""
+msgstr "此外，GTK 主题和字体需要 xdg-desktop-portal-gtk。 如果主要的 xdg-desktop-portal 实现不支持文件选择，它也可以用作文件选择器的后备。"
 
 #: ../../portals.rst:25
 msgid "Portal support in Qt and KDE"
-msgstr ""
+msgstr "Qt 和 KDE 中的Portal支持"
 
 #: ../../portals.rst:27
 msgid ""
@@ -85,13 +84,13 @@ msgid ""
 "functionality when they detect that they are being used inside a Flatpak "
 "sandbox. Here are some hints for what Qt or KDE applications should do to"
 " benefit from this."
-msgstr ""
+msgstr "当 Qt 和 KDE 库检测到它们正在 Flatpak 沙箱中使用时，它们将透明地使用门户来实现某些功能。 以下是一些有关 Qt 或 KDE 应用程序应采取哪些措施才能从中受益的提示。"
 
 #: ../../portals.rst:31
 msgid ""
 "Use ``QDesktopServices::openUrl(const QUrl &url)`` or ``KIO::OpenUrlJob``"
 " to open URIs or send an email when using ``mailto`` URL"
-msgstr ""
+msgstr "使用 ``QDesktopServices::openUrl(const QUrl &url)`` 或 ``KIO::OpenUrlJob`` 打开 URI 或在使用 ``mailto`` URL 时发送电子邮件"
 
 #: ../../portals.rst:33
 msgid ""
@@ -99,9 +98,9 @@ msgid ""
 "directories. Avoid using ``QFileDialog::DontUseNativeDialog``. Note that "
 "portals cannot currently give access to directories on the host "
 "filesystem"
-msgstr ""
+msgstr "使用 ``QFileDialog`` 类打开文件，从 Qt ``5.18.90`` 开始，打开目录。 避免使用 ``QFileDialog::DontUseNativeDialog``。 请注意，门户当前无法授予对主机文件系统上的目录的访问权限"
 
 #: ../../portals.rst:36
 msgid "Use ``KNotification::notify()`` to show notification"
-msgstr ""
+msgstr "使用 ``KNotification::notify()`` 显示通知"
 

@@ -4,7 +4,6 @@
 # This file is distributed under the same license as the Flatpak package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flatpak \n"
@@ -53,97 +52,97 @@ msgstr "如果你只是想使用sdk而不是像上面那样的平台，更好的
 msgid ""
 "Running against a runtime with a completely different ABI is undefined "
 "and unsupported behavior."
-msgstr ""
+msgstr "针对具有完全不同 ABI 的运行时运行是未定义且不受支持的行为"
 
 #: ../../tips-and-tricks.rst:29
 msgid "Downgrading"
-msgstr ""
+msgstr "降级"
 
 #: ../../tips-and-tricks.rst:31
 msgid ""
 "It is possible to downgrade an installed application (or runtime) to an "
 "older build."
-msgstr ""
+msgstr "可以将已安装的应用程序（或运行时）降级到较旧的版本。"
 
 #: ../../tips-and-tricks.rst:34
 msgid "First you look for the commit you are interested in::"
-msgstr ""
+msgstr "首先，您寻找您感兴趣的提交："
 
 #: ../../tips-and-tricks.rst:38
 msgid "Then you deploy the commit::"
-msgstr ""
+msgstr "然后部署提交："
 
 #: ../../tips-and-tricks.rst:46
 msgid ""
 "The example here uses ``sudo`` for system installations because, unlike "
 "normal updates, downgrades are considered a privileged action. If the "
 "application is installed per-user you would run it as that user."
-msgstr ""
+msgstr "此处的示例使用 ``sudo`` 进行系统安装，因为与正常更新不同，降级被视为特权操作。 如果应用程序是按用户安装的，您将以该用户的身份运行它。"
 
 #: ../../tips-and-tricks.rst:48
 msgid ""
 "If you have Flatpak 1.5.0 or later, you can also prevent the app from "
 "being included in updates (either manual or automatic)::"
-msgstr ""
+msgstr "如果您有 Flatpak 1.5.0 或更高版本，您还可以阻止该应用程序包含在更新中（手动或自动）："
 
 #: ../../tips-and-tricks.rst:55
 msgid "Bisecting regressions in application builds"
-msgstr ""
+msgstr "应用程序构建中的平分回归"
 
 #: ../../tips-and-tricks.rst:57
 msgid ""
 "In case the newest builds of an application introduce regressions, you "
 "can use ``flatpak-bisect`` to discover which commit introduced the "
 "regression. It works just like ``git bisect``."
-msgstr ""
+msgstr "如果应用程序的最新版本引入了回归，您可以使用 ``flatpak-bisect`` 发现哪个提交引入了回归。 有用 就像 ``git bisect``."
 
 #: ../../tips-and-tricks.rst:61
 msgid ""
 "In case your distribution doesn't install the ``flatpak-bisect`` utility,"
 " you can find it distributed alongside the Flatpak source code, in "
 "https://github.com/flatpak/flatpak/blob/main/scripts/flatpak-bisect"
-msgstr ""
+msgstr "如果您的发行版没有安装 ``flatpak-bisect`` 实用程序，你 可以找到它与 Flatpak 源代码一起分发，位于 https://github.com/flatpak/flatpak/blob/main/scripts/flatpak-bisect "
 
 #: ../../tips-and-tricks.rst:65
 msgid "First you update the application and get its history::"
-msgstr ""
+msgstr "首先，您更新应用程序并获取其历史记录： "
 
 #: ../../tips-and-tricks.rst:69
 msgid "Then, you should set the current commit as the first bad commit::"
-msgstr ""
+msgstr "然后，您应该将当前提交设置为第一个错误提交： "
 
 #: ../../tips-and-tricks.rst:73
 msgid ""
 "Now you need to find the hash of the first known good commit. For that, "
 "you can see the build history by running::"
-msgstr ""
+msgstr "现在您需要找到第一个已知良好提交的哈希值。 为此，您可以 通过运行以下命令查看构建历史记录： "
 
 #: ../../tips-and-tricks.rst:78
 msgid "To start bisecting, checkout the first known good commit you find::"
-msgstr ""
+msgstr "要开始二分，请检查您找到的第一个已知的良好提交： "
 
 #: ../../tips-and-tricks.rst:82
 msgid ""
 "After setting the bad commit and the first known good commit, you can "
 "launch the application to verify if the current commit in the bisecting "
 "session is a good or a bad one."
-msgstr ""
+msgstr "设置坏提交和第一个已知好的提交后，您可以启动 应用程序验证平分会话中的当前提交是否是好或坏。 "
 
 #: ../../tips-and-tricks.rst:86
 msgid "To mark a commit as good or bad, run::"
-msgstr ""
+msgstr "要将提交标记为好或坏，请运行： "
 
 #: ../../tips-and-tricks.rst:90
 msgid "Or::"
-msgstr ""
+msgstr "或者： "
 
 #: ../../tips-and-tricks.rst:94
 msgid "``flatpak-bisect`` will inform you when the first bad commit is found."
-msgstr ""
+msgstr "``flatpak-bisect`` 当发现第一个错误提交时会通知您。"
 
 #: ../../tips-and-tricks.rst:97
 msgid "Adding a custom installation"
-msgstr ""
+msgstr "添加自定义安装"
 
 #: ../../tips-and-tricks.rst:99
 msgid ""
@@ -151,19 +150,19 @@ msgid ""
 "install per-user with the ``--user`` option accepted by most commands. A "
 "third option is to set up a custom installation, which could be stored on"
 " an external hard drive."
-msgstr ""
+msgstr "默认情况下，Flatpak 在系统范围内安装应用程序，也可以进行安装 每个用户与 ``--user`` 大多数命令接受的选项。 第三种选择 是设置自定义安装，可以存储在外部硬盘上 驾驶。"
 
 #: ../../tips-and-tricks.rst:104
 msgid "First ensure that the config directory exists::"
-msgstr ""
+msgstr "首先确保config目录存在： "
 
 #: ../../tips-and-tricks.rst:108
 msgid "Then open a file in that directory as root::"
-msgstr ""
+msgstr "然后以 root 身份打开该目录中的文件： "
 
 #: ../../tips-and-tricks.rst:112
 msgid "And write something like this::"
-msgstr ""
+msgstr "并写下这样的内容： "
 
 #: ../../tips-and-tricks.rst:119
 msgid ""
@@ -172,35 +171,35 @@ msgid ""
 "specification. Replace the path with the actual path you want to use. You"
 " can use ``df`` to see mounted file systems and ``mkdir`` to create a "
 "``flatpak`` directory so the path specified by ``Path=`` exists."
-msgstr ""
+msgstr "请参阅 `flatpak-installation(5)  <https://docs.flatpak.org/en/latest/flatpak-command-reference.html#flatpak-installation>`_  了解完整的格式规范。 将路径替换为您要使用的实际路径。 您可以使用 ``df`` 查看已安装的文件系统，并使用 ``mkdir`` 创建 ``flatpak`` 目录，以便 ``Path=`` 指定的路径存在。"
 
 #: ../../tips-and-tricks.rst:125
 msgid "Then you can add a remote using a command like::"
-msgstr ""
+msgstr "然后您可以使用如下命令添加远程："
 
 #: ../../tips-and-tricks.rst:129
 msgid "And install to it with::"
-msgstr ""
+msgstr "并安装它： "
 
 #: ../../tips-and-tricks.rst:135
 msgid ""
 "If your custom installation is the only one with the remote you're "
 "installing from, ``--installation`` can be omitted."
-msgstr ""
+msgstr "如果您的自定义安装是唯一使用您要从中进行安装的远程安装，则可以省略 ``--installation`` 。"
 
 #: ../../tips-and-tricks.rst:138
 msgid "And run apps from it with::"
-msgstr ""
+msgstr "并通过以下方式运行应用程序： "
 
 #: ../../tips-and-tricks.rst:144
 msgid ""
 "If your custom installation is the only one with the app you're running, "
 "``--installation`` can be omitted."
-msgstr ""
+msgstr "如果您的自定义安装是您正在运行的应用程序的唯一安装，``--installation`` 可以省略。"
 
 #: ../../tips-and-tricks.rst:148
 msgid "Configuring resource limits for apps"
-msgstr ""
+msgstr "配置应用程序的资源限制 "
 
 #: ../../tips-and-tricks.rst:150
 msgid ""
@@ -209,14 +208,14 @@ msgid ""
 " with ``*`` replaced by an arbitrary suffix. This means you can create a "
 "file like ``~/.config/systemd/user/app-flatpak-"
 "com.brave.Browser-.scope.d/memory.conf`` with contents like::"
-msgstr ""
+msgstr "当 systemd 可用时，Flatpak 会尝试将应用程序进程放入 ``app-flatpak-com.brave.Browser-*.scope `` （在 Brave 的情况下）等范围内，并将 ``*`` 替换为任意后缀。 这意味着您可以创建类似 ``~/.config/systemd/user/app-flatpak-com.brave.Browser-.scope.d/memory.conf`` 的文件，其内容如下："
 
 #: ../../tips-and-tricks.rst:159
 msgid ""
 "Then after a ``systemctl --user daemon-reload``, those ``systemd"
 ".resource-control(5)`` parameters will apply to all instances of that "
 "app."
-msgstr ""
+msgstr "然后，在 ``systemctl --user daemon-reload`` 之后，这些 ``systemd.resource-control(5)`` 参数将应用于该应用程序的所有实例。"
 
 #~ msgid ""
 #~ "In case your distribution doesn't "

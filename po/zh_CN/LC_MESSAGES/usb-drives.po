@@ -4,12 +4,11 @@
 # This file is distributed under the same license as the Flatpak package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flatpak \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-07 16:26-0600\n"
+"POT-Creation-Date: 2023-10-11 09:53+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,40 +19,40 @@ msgstr ""
 
 #: ../../usb-drives.rst:2
 msgid "USB Drives"
-msgstr ""
+msgstr "USB 驱动器"
 
 #: ../../usb-drives.rst:4
 msgid ""
 "One can distribute flatpaks along with their dependencies on USB drives "
 "(or network shares, etc.) which is especially helpful in situations where"
 " Internet access is limited or non-existent."
-msgstr ""
+msgstr "人们可以分发 Flatpak 及其对 USB 驱动器（或网络共享等）的依赖项，这在 Internet 访问受限或不存在的情况下特别有用。"
 
 #: ../../usb-drives.rst:8
 msgid "For offline distribution to work there are a few prerequisites:"
-msgstr ""
+msgstr "要使离线分发发挥作用，有几个先决条件："
 
 #: ../../usb-drives.rst:10
 msgid ""
 "the remote repositories providing the app or any of its dependencies must"
 " utilize GPG signatures"
-msgstr ""
+msgstr "提供应用程序或其任何依赖项的远程存储库必须使用 GPG 签名"
 
 #: ../../usb-drives.rst:12
 msgid "the remote repos must all have a collection ID set on the server side"
-msgstr ""
+msgstr "远程仓库必须都有一个在服务器端设置的集合 ID"
 
 #: ../../usb-drives.rst:13
 msgid ""
 "the locally configured remotes must have a collection ID set (on the "
 "client side)"
-msgstr ""
+msgstr "本地配置的遥控器必须设置集合 ID（在客户端）"
 
 #: ../../usb-drives.rst:15
 msgid ""
 "the relevant remotes must be configured on the receiving computer (the "
 "one installing from the drive)"
-msgstr ""
+msgstr "必须在接收计算机（从驱动器安装的计算机）上配置相关遥控器"
 
 #: ../../usb-drives.rst:18
 msgid ""
@@ -63,10 +62,14 @@ msgid ""
 "<https://blogs.gnome.org/mclasen/2018/08/26/about-flatpak-"
 "installations/>`__ for an introduction."
 msgstr ""
+"然后可以使用 `flatpak create-usb <https://docs.flatpak.org/en/latest/flatpak-"
+"command-eference.html#flatpak-create-usb>`_ 命令将应用程序复制到 USB 驱动器。 您可以参考 "
+"`这篇博文 <https://blogs.gnome.org/mclasen/2018/08/26/about-flatpak-"
+"installations/>`_ 进行介绍。"
 
 #: ../../usb-drives.rst:24
 msgid "For example, if you want to put Gedit on a USB drive:"
-msgstr ""
+msgstr "例如，如果您想将 Gedit 放在 USB 驱动器上："
 
 #: ../../usb-drives.rst:26
 msgid ""
@@ -75,6 +78,8 @@ msgid ""
 "org.gnome.gedit`` to determine the origin remote. For example that may be"
 " ``flathub``."
 msgstr ""
+"首先使用 ``flatpak list --app`` 识别应用程序 ID。 对于 Gedit，它是 ``org.gnome.gedit``。 "
+"使用 ``flatpak info -o org.gnome.gedit`` 确定源远程。 例如，可能是 ``flathub``。"
 
 #: ../../usb-drives.rst:31
 msgid ""
@@ -84,16 +89,19 @@ msgid ""
 " flathub``. If any dependencies come from other remotes, those will also "
 "need a collection ID configured."
 msgstr ""
+"通过使用 ``flatpak Remotes -d` 并检查“Collection ID”列，确保源远程具有集合 ID 设置。 "
+"如果没有，请配置一个，例如 flatpak远程修改``--collection-id=org.flathub.Stable flathub``。 "
+"如果任何依赖项来自其他遥控器，则还需要配置集合 ID。"
 
 #: ../../usb-drives.rst:37
 msgid ""
 "Next, use the ``df`` command to identify the mount point for the USB "
 "drive. It may be something like ``/media/user/FLATPAKS``."
-msgstr ""
+msgstr "接下来，使用 ``df`` 命令识别 USB 驱动器的安装点。 它可能类似于 ``/media/user/FLATPAKS``。"
 
 #: ../../usb-drives.rst:40
 msgid "Now copy the flatpak and its dependencies to the drive::"
-msgstr ""
+msgstr "现在将 flatpak 及其依赖项复制到驱动器："
 
 #: ../../usb-drives.rst:44
 msgid ""
@@ -102,6 +110,8 @@ msgid ""
 " if the USB drive and USB port aren't USB 3.0+. Then unmount the drive "
 "before removing it::"
 msgstr ""
+"等待复制过程完成，此时您应该会看到命令提示符 (``$``)。 此过程可能需要数十分钟，特别是如果 USB 驱动器和 USB 端口不是 USB "
+"3.0+。 然后在移除驱动器之前先卸载驱动器："
 
 #: ../../usb-drives.rst:52
 msgid ""
@@ -110,6 +120,8 @@ msgid ""
 "after. With earlier versions you can simply use the ``flatpak install`` "
 "command as you normally would online::"
 msgstr ""
+"从此类 USB 驱动器（例如在离线计算机上）安装的过程在 1.8.0 之前和之后的 Flatpak 版本之间有所不同。 "
+"对于早期版本，您可以像平常在线那样使用 ``flatpak install`` 命令："
 
 #: ../../usb-drives.rst:59
 msgid ""
@@ -119,10 +131,14 @@ msgid ""
 "arguments still works. Otherwise, you can use the ``--sideload-repo`` "
 "option in your command invocation::"
 msgstr ""
+"对于 1.8.0 之后的版本，如果您的 Linux 发行版已打包相关的 `systemd 单元 "
+"<https://github.com/flatpak/flatpak/tree/main/sideload-repos-systemd>`_ "
+"，则使用不带额外参数的 ``flatpak install`` 仍然有效。 否则，您可以在命令调用中使用 ``--sideload-repo`` "
+"选项："
 
 #: ../../usb-drives.rst:67
 msgid "The ``flatpak update`` command also accepts a ``--sideload-repo`` option."
-msgstr ""
+msgstr "``flatpak update`` 命令还接受 ``--sideload-repo`` 选项。"
 
 #: ../../usb-drives.rst:69
 msgid ""
@@ -133,6 +149,10 @@ msgid ""
 "<https://docs.flatpak.org/en/latest/flatpak-command-"
 "reference.html#flatpak>`__."
 msgstr ""
+"或者，可以使用放置在系统范围或用户特定目录中的符号链接来指定旁加载源，然后这些源将用于所有 Flatpak 操作，而不需要 "
+"``--sideload-repo`` 选项。 请参阅 `flatpak 手册页 "
+"<https://docs.flatpak.org/en/latest/flatpak-command-"
+"reference.html#flatpak>`_ 。"
 
 #~ msgid ""
 #~ "For versions after 1.8.0, if your "

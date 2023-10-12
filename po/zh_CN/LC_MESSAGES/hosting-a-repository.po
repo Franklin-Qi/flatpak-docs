@@ -23,7 +23,7 @@ msgstr "托管一个仓库"
 msgid ""
 "Flathub uses flat-manager to host its Flatpak repository. See "
 "https://github.com/flatpak/flat-manager"
-msgstr ""
+msgstr "Flathub 使用 flat-manager 来托管其 Flatpak 存储库。 请参阅 https://github.com/flatpak/flat-manager"
 
 #: ../../hosting-a-repository.rst:9
 msgid ""
@@ -48,7 +48,6 @@ msgstr ""
 " keep-alive是很重要的。"
 
 #: ../../hosting-a-repository.rst:21
-#, fuzzy
 msgid ""
 "Flatpak supports something called static deltas. These are single files "
 "that contain all the data needed to go between two revisions (or from "

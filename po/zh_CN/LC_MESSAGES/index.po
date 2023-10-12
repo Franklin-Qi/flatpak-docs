@@ -37,7 +37,6 @@ msgid ""
 msgstr "本文档主要针对应用开发者和分发者。对Flatpak感兴趣的人也可以阅读相关内容。"
 
 #: ../../index.rst:14
-#, fuzzy
 msgid ""
 "If you are looking for information about how to use Flatpak to install "
 "and run applications, please refer to `the Flatpak website "

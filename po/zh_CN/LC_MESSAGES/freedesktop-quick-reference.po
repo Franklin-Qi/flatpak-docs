@@ -4,7 +4,6 @@
 # This file is distributed under the same license as the Flatpak package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flatpak \n"
@@ -20,14 +19,14 @@ msgstr ""
 
 #: ../../freedesktop-quick-reference.rst:2
 msgid "Freedesktop quick reference"
-msgstr ""
+msgstr "Freedesktop 快速参考"
 
 #: ../../freedesktop-quick-reference.rst:4
 msgid ""
 "In order to ensure interoperability, flatpak adheres strictly to a number"
 " of freedesktop standards and practices. This page describes the basic "
 "conventions that should be followed when building a flatpak app."
-msgstr ""
+msgstr "为了确保互操作性，Flatpak 严格遵守 大量的 freedesktop 标准和实践。 本页描述了 构建 Flatpak 应用程序时应遵循的基本约定。 "
 
 #: ../../freedesktop-quick-reference.rst:9
 msgid "Icons"
@@ -38,24 +37,24 @@ msgid ""
 "Application icons can be in either png or svg format, must use the "
 "application's appid as a prefix and be placed in "
 "``/app/share/icons/hicolor/$size/apps/``"
-msgstr ""
+msgstr "应用程序图标可以是 png 或 svg 格式，必须使用 应用程序的appid作为前缀并放置在 ``/app/share/icons/hicolor/$size/apps/``"
 
 #: ../../freedesktop-quick-reference.rst:15
 #: ../../freedesktop-quick-reference.rst:47
 #: ../../freedesktop-quick-reference.rst:109
 msgid "Example:"
-msgstr ""
+msgstr "例子： "
 
 #: ../../freedesktop-quick-reference.rst:21
 msgid ""
 "If interested, you can read the full spec `here "
 "<https://specifications.freedesktop.org/icon-theme-spec/icon-theme-spec-"
 "latest.html>`__"
-msgstr ""
+msgstr "如果有兴趣，您可以在这里阅读 `完整的规格 <https://specifications.freedesktop.org/icon-theme-spec/icon-theme-spec-latest.html>`_ 。"
 
 #: ../../freedesktop-quick-reference.rst:26
 msgid "Desktop files"
-msgstr ""
+msgstr "桌面文件 "
 
 #: ../../freedesktop-quick-reference.rst:28
 msgid ""
@@ -63,25 +62,25 @@ msgid ""
 "display available applications to the user, they contain information "
 "about how to launch the application, its icon and categories among "
 "others."
-msgstr ""
+msgstr "桌面环境使用桌面文件来识别和 向用户显示可用的应用程序，它们包含信息 关于如何启动应用程序、其图标和类别 其他的。"
 
 #: ../../freedesktop-quick-reference.rst:33
 msgid ""
 "A minimal desktop file needs at least the application's *Name*, *Exec* "
 "command, *Type* and *Icon*:"
-msgstr ""
+msgstr "一个最小的桌面文件至少需要应用程序的 *Name* , *Exec* 命令、 *Type* 和 *Icon* ： "
 
 #: ../../freedesktop-quick-reference.rst:44
 msgid ""
 "Your desktop file should be prefixed with your application's appid and "
 "placed in ``/app/share/applications/`` within your app."
-msgstr ""
+msgstr "您的桌面文件应以应用程序的 appid 为前缀，并放置在应用程序内的 `/app/share/applications/` 中。"
 
 #: ../../freedesktop-quick-reference.rst:53
 msgid ""
 "It's recommended to use ``desktop-file-validate`` to check your file for "
 "errors before including it."
-msgstr ""
+msgstr "建议在包含文件之前使用 `Desktop-file-validate` 检查文件是否有错误。"
 
 #: ../../freedesktop-quick-reference.rst:56
 msgid ""
@@ -94,7 +93,7 @@ msgid ""
 "``~/.local/share/flatpak/``). In the case of "
 "``org.gnome.Dictionary.desktop``, the rewritten ``Exec`` line looks like "
 "this::"
-msgstr ""
+msgstr "关于 ``Exec`` 行的特别说明：安装应用程序时，Flatpak 会自动重写包含的 ``.desktop`` 文件，以便通过 Flatpak 启动应用程序。 然后将重写的桌面文件导出到 Flatpak 安装目录下的导出 ``/share/applications/org.gnome.Dictionary.desktop`` 等路径（通常为 ``/var/lib/flatpak/`` 或 ``~/.local/share/flatpak/``） 。 对于 ``org.gnome.Dictionary.desktop``，重写的 Exec 行如下所示："
 
 #: ../../freedesktop-quick-reference.rst:66
 msgid ""
@@ -102,28 +101,28 @@ msgid ""
 "``--command`` argument to Flatpak and arguments will be passed through. "
 "This means that in most cases, it should match the value of the "
 "``command:`` line in your app's manifest."
-msgstr ""
+msgstr "原始桌面文件中的命令将成为 Flatpak 的 ``--command`` 参数的一部分，并且参数将被传递。 这意味着在大多数情况下，它应该与应用程序清单中的 ``command:`` 行的值匹配。"
 
 #: ../../freedesktop-quick-reference.rst:71
 msgid ""
 "If you want the ``--command`` argument to be omitted from the ``flatpak "
 "run`` command in the generated desktop file, you can leave the ``Exec`` "
 "value in the source desktop file empty::"
-msgstr ""
+msgstr "如果您希望在生成的桌面文件中的 ``flatpak run`` 命令中省略 ``--command`` 参数，可以将源桌面文件中的 ``Exec`` 值保留为空："
 
 #: ../../freedesktop-quick-reference.rst:81
 msgid "This way, the generated ``Exec`` line looks like this::"
-msgstr ""
+msgstr "这样，生成的 ``Exec`` 行如下所示："
 
 #: ../../freedesktop-quick-reference.rst:85
 msgid ""
 "With Flatpak ≤ 1.12.7, a warning may be shown when exporting a build with"
 " an empty Exec= line to a repository::"
-msgstr ""
+msgstr "对于 Flatpak ≤ 1.12.7，将包含空 Exec= 行的构建导出到存储库时可能会显示警告："
 
 #: ../../freedesktop-quick-reference.rst:89
 msgid "This warning can be ignored."
-msgstr ""
+msgstr "可以忽略此警告。"
 
 #: ../../freedesktop-quick-reference.rst:91
 msgid ""
@@ -131,11 +130,11 @@ msgid ""
 "<https://wiki.archlinux.org/title/desktop_entries>`__. If interested, you"
 " can read also the full spec `here "
 "<https://specifications.freedesktop.org/desktop-entry-spec/latest/>`__."
-msgstr ""
+msgstr "您可以在此处找到 `有关桌面文件 <https://wiki.archlinux.org/title/desktop_entries>`_ 的更多一般信息。 如果有兴趣，您还可以在这里阅读 `完整的规格 <https://specifications.freedesktop.org/desktop-entry-spec/latest/>`_ 。"
 
 #: ../../freedesktop-quick-reference.rst:97
 msgid "Appdata files"
-msgstr ""
+msgstr "应用程序数据文件"
 
 #: ../../freedesktop-quick-reference.rst:99
 msgid ""
@@ -143,20 +142,20 @@ msgid ""
 "Software) in order to display metadata about your application, such as a "
 "description, screenshots, changelogs when updates are available, and "
 "other miscellaneous things."
-msgstr ""
+msgstr "应用程序商店（例如 KDE Discover、GNOME Software）使用 Appdata 文件来显示有关应用程序的元数据，例如描述、屏幕截图、更新可用时的更改日志以及其他杂项。"
 
 #: ../../freedesktop-quick-reference.rst:104
 msgid ""
 "Your Appdata file should be prefixed with your application's appid and "
 "placed in ``/app/share/metainfo/``. You should also use ``appstream-util "
 "validate-relax`` to check your file for errors before including it."
-msgstr ""
+msgstr "您的 Appdata 文件应以应用程序的 appid 为前缀，并放置在 ``/app/share/metainfo/`` 中。 您还应该在包含文件之前使用 ``appstream-util validate-relax`` 检查文件是否有错误。"
 
 #: ../../freedesktop-quick-reference.rst:115
 msgid ""
 "If interested, you can read the full spec `here "
 "<https://www.freedesktop.org/software/appstream/docs/>`__."
-msgstr ""
+msgstr "如果有兴趣，您可以在这里阅读 `完整的规格 <https://www.freedesktop.org/software/appstream/docs/>`_ 。"
 
 #~ msgid ""
 #~ "If interested, you can read the "

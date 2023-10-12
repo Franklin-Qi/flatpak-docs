@@ -32,7 +32,7 @@ msgid ""
 "Since single-file bundles don't include dependencies or AppStream data, "
 "the preferred way of distributing applications offline is with the "
 "create-usb command; see :doc:`usb-drives`."
-msgstr ""
+msgstr "由于单文件捆绑包不包含依赖项或 AppStream 数据，因此离线分发应用程序的首选方法是使用 create-usb 命令； 请参阅 :doc:`usb-drives` 。"
 
 #: ../../single-file-bundles.rst:16
 msgid ""

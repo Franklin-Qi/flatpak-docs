@@ -35,8 +35,7 @@ msgid ""
 "tutorial before reading this section, and to be familiar with :doc"
 ":`flatpak-builder`."
 msgstr ""
-"这个页面提供了如何使用清单文件的信息和指南，包括需要指定的最常用参数的详解。读这一章节之前要求已经学习过  :doc:`first-build` "
-"并且熟悉 :doc:`flatpak-builder` 。"
+"这个页面提供了如何使用清单文件的信息和指南，包括需要指定的最常用参数的详解。读这一章节之前要求已经学习过  :doc:`first-build` 并且熟悉 :doc:`flatpak-builder` 。"
 
 #: ../../manifests.rst:13
 msgid ""
@@ -46,8 +45,7 @@ msgid ""
 "its examples."
 msgstr ""
 "清单文件应该使用应用ID命名。举个例子：GNOME Dictionary的清单文件应该命名为 "
-"``org.gnome.Dictionary.json`` .本页面使用这个清单文件，在 :doc:`first-build` "
-"有对整个例子的介绍。"
+"``org.gnome.Dictionary.json`` .本页面有使用这个清单文件整个例子的介绍。"
 
 #: ../../manifests.rst:17
 msgid ""
@@ -91,7 +89,7 @@ msgstr "文件重命名"
 msgid ""
 "Exports are application files that are made available to the host, and "
 "include things like the application's ``.desktop`` file and icon."
-msgstr "正如 :doc:`introduction` 中描述的，导出是对主机可用的应用文件，包含像 ``.desktop`` 文件和图标文件之类的。"
+msgstr "导出是可供主机使用的应用程序文件，包括应用程序的 ``.desktop`` 文件和图标等内容。"
 
 #: ../../manifests.rst:48
 msgid ""
@@ -158,10 +156,7 @@ msgid ""
 "Guidance on which permissions to use can be found in the :doc:`sandbox-"
 "permissions`, and a full list of ``finish-args`` options can be found in "
 ":doc:`sandbox-permissions-reference`."
-msgstr ""
-"正如 :doc:`first-build` 中解释的，这两个属性为应用授予X11显示服务和网络的权限。权限的使用指南可以参考 :doc"
-":`sandbox-permissions` , 所有的 ``finish-args`` 选项可以查看 :doc:`sandbox-"
-"permissions-reference` 。"
+msgstr "有关使用哪些权限的指南可以在 :doc:`sandbox-permissions` 中找到，并且可以在 :doc:`sandbox-permissions-reference` 中找到 ``finish-args`` 选项的完整列表。"
 
 #: ../../manifests.rst:97
 msgid ""

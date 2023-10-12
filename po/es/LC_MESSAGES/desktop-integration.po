@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Flatpak \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-10 10:17+0800\n"
+"POT-Creation-Date: 2023-10-11 15:51+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -275,35 +275,40 @@ msgid ""
 "in ``/usr`` (where system themes are typically located). The solution to "
 "this was to package themes as Flatpaks, as relying upon the host to have "
 "the correct version for every flatpak defeats the portability benefits it"
-" provides. These themes are provided as `extensions "
+" provides."
+msgstr ""
+
+#: ../../desktop-integration.rst:149
+msgid ""
+"These themes are provided as `extensions "
 "<https://github.com/flatpak/flatpak/wiki/Extensions>`_, to the "
 "Freedesktop runtime when the extension point is Gtk, and to the KDE "
 "runtime when the extension point is Qt."
 msgstr ""
 
-#: ../../desktop-integration.rst:149
+#: ../../desktop-integration.rst:151
 msgid ""
 "The theming system requires Flatpak 0.8.4+ and applications using up to "
 "date ``org.gnome.Platform`` 3.24+, or ``org.freedesktop.Platform`` 1.6+, "
 "or ``org.kde.Platform`` 5.9+."
 msgstr ""
 
-#: ../../desktop-integration.rst:152
+#: ../../desktop-integration.rst:154
 msgid "Installing themes"
 msgstr ""
 
-#: ../../desktop-integration.rst:155
+#: ../../desktop-integration.rst:157
 msgid "Instructions for Gtk"
 msgstr ""
 
-#: ../../desktop-integration.rst:157
+#: ../../desktop-integration.rst:159
 msgid ""
 "The current Gtk themes are packaged in the `flathub "
 "<https://flathub.org/>`_ repository which you can add (if it's not "
 "already added) by running::"
 msgstr ""
 
-#: ../../desktop-integration.rst:161
+#: ../../desktop-integration.rst:163
 msgid ""
 "To see a list of currently packaged themes you can use the command "
 "``flatpak search gtk3theme`` (available since Flatpak version 0.10.1). In"
@@ -315,33 +320,33 @@ msgid ""
 "flatpak package."
 msgstr ""
 
-#: ../../desktop-integration.rst:163
+#: ../../desktop-integration.rst:165
 msgid ""
 "You can install themes with the command ``flatpak install flathub "
 "org.gtk.Gtk3theme.Foo``, replacing ``Foo`` with the name of the desired "
 "theme."
 msgstr ""
 
-#: ../../desktop-integration.rst:166
+#: ../../desktop-integration.rst:168
 msgid "Instructions for Qt"
 msgstr ""
 
-#: ../../desktop-integration.rst:168
+#: ../../desktop-integration.rst:170
 msgid ""
 "For the Qt theming to work, the flatpak packages kstyle and platformtheme"
 " must be installed. These are packed in the kdeapps repository which you "
 "can add by running::"
 msgstr ""
 
-#: ../../desktop-integration.rst:172
+#: ../../desktop-integration.rst:174
 msgid "Afterwards the two packages can be installed with the following commands::"
 msgstr ""
 
-#: ../../desktop-integration.rst:178
+#: ../../desktop-integration.rst:180
 msgid "Applying themes"
 msgstr ""
 
-#: ../../desktop-integration.rst:180
+#: ../../desktop-integration.rst:182
 msgid ""
 "There is no ideal way to specify the theme Flatpak applications use. The "
 "applications will try to match the system theme currently being used, if "
@@ -350,7 +355,7 @@ msgid ""
 "use Qt) if a corresponding theme isn't detected."
 msgstr ""
 
-#: ../../desktop-integration.rst:182
+#: ../../desktop-integration.rst:184
 msgid ""
 "As of Flatpak 0.10.1, the Flatpak system can detect whether the system "
 "themes available correspond to any Flatpak themes available in the "
@@ -363,7 +368,7 @@ msgid ""
 "applications will fall back to Adwaita or the default Qt theme."
 msgstr ""
 
-#: ../../desktop-integration.rst:184
+#: ../../desktop-integration.rst:186
 msgid ""
 "On X11, Gtk3 picks up the themes via XSettings. Specifically, the GNOME "
 "XSettings daemon ``gsd-xsettings`` reads the DConf values and converts "
@@ -376,18 +381,18 @@ msgid ""
 "to have DConf access."
 msgstr ""
 
-#: ../../desktop-integration.rst:187
+#: ../../desktop-integration.rst:189
 msgid "Other notes on theming"
 msgstr ""
 
-#: ../../desktop-integration.rst:189
+#: ../../desktop-integration.rst:191
 msgid ""
 "In regards to icon themes, since Flatpak 0.8.8 the host icons are exposed"
 " to the guest, so that there is usually no need for the presence of "
 "Flatpak icon themes."
 msgstr ""
 
-#: ../../desktop-integration.rst:191
+#: ../../desktop-integration.rst:193
 msgid ""
 "If you use the *Global Dark Theme* option (removed in GNOME-Tweaks 3.28)"
 "  in ``gnome-tweak-tool`` it will not work as that simply writes to "
@@ -440,5 +445,25 @@ msgstr ""
 #~ "permissions to escape the sandbox and"
 #~ " these services are not designed to"
 #~ " be robust against untrusted software."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Flatpak applications cannot directly use "
+#~ "the system theme. This happens because"
+#~ " flatpaks do not have the ability "
+#~ "to use data files or libraries in"
+#~ " ``/usr`` (where system themes are "
+#~ "typically located). The solution to this"
+#~ " was to package themes as Flatpaks,"
+#~ " as relying upon the host to "
+#~ "have the correct version for every "
+#~ "flatpak defeats the portability benefits "
+#~ "it provides. These themes are provided"
+#~ " as `extensions "
+#~ "<https://github.com/flatpak/flatpak/wiki/Extensions>`_, to "
+#~ "the Freedesktop runtime when the "
+#~ "extension point is Gtk, and to the"
+#~ " KDE runtime when the extension point"
+#~ " is Qt."
 #~ msgstr ""
 

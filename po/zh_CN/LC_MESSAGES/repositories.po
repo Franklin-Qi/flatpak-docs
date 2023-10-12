@@ -36,7 +36,6 @@ msgstr ""
 "此外， :doc:`flatpak-builder` 上的部分介绍了将应用程序添加到存储库的最常用方法。"
 
 #: ../../repositories.rst:13
-#, fuzzy
 msgid ""
 "To use a repository to publish an application, it is possible to either "
 "host your own (covered in the next section, :doc:`hosting-a-repository`) "

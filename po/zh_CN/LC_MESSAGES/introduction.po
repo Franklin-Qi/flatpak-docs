@@ -34,30 +34,30 @@ msgstr "术语"
 msgid ""
 "Flatpak: a system for building, distributing, and running sandboxed "
 "desktop applications on Linux."
-msgstr "Flatpak：一个用于在 Linux 上构建、分发和运行沙盒桌面应用程序的系统。"
+msgstr "``Flatpak``：一个用于在 Linux 上构建、分发和运行沙盒桌面应用程序的系统。"
 
 #: ../../introduction.rst:12
 msgid ""
 "Flatpak application: these are the applications the user installs via the"
 " ``flatpak`` command or via a different UI like GNOME Software or KDE "
 "Discover."
-msgstr "Flatpak application：这些是用户通过 flatpak 命令或通过不同的 UI（如 GNOME Software 或 KDE Discover）安装的应用程序。"
+msgstr "``Flatpak application``：这些是用户通过 flatpak 命令或通过不同的 UI（如 GNOME Software 或 KDE Discover）安装的应用程序。"
 
 #: ../../introduction.rst:14
 msgid ""
 "Runtime: also called platforms, these are integrated platforms to provide"
 " basic utilities needed for a Flatpak application to work."
-msgstr "Runtime：也称为平台，这些是集成平台，提供 Flatpak 应用程序工作所需的基本实用程序。"
+msgstr "``Runtime``：也称为平台，这些是集成平台，提供 Flatpak 应用程序工作所需的基本实用程序。"
 
 #: ../../introduction.rst:16
 msgid "BaseApp: these are integrated platforms for frameworks like Electron."
-msgstr "BaseApp：这些是 Electron 等框架的集成平台。"
+msgstr "``BaseApp``：这些是 Electron 等框架的集成平台。"
 
 #: ../../introduction.rst:17
 msgid ""
 "Flatpak bundle: a specific single-file export format which contains a "
 "Flatpak app or runtime."
-msgstr "Flatpak bundle：一种特定的单文件导出格式，其中包含 Flatpak 应用程序或运行时。"
+msgstr "``Flatpak bundle``：一种特定的单文件导出格式，其中包含 Flatpak 应用程序或运行时。"
 
 #: ../../introduction.rst:20
 msgid "Target audience"

@@ -27,9 +27,7 @@ msgid ""
 "integration features. It also provides guidance on how applications can "
 "ensure that their user interfaces fit into the whole range of Linux "
 "desktops and distributions."
-msgstr ""
-":doc:`conventions` "
-"涵盖了Linux桌面集成的必要方面。这个页面提供了更多可选的桌面集成特性的信息。它也提供了一个指南，便于开发者让程序的用户界面兼容多数Linux桌面和发行版。"
+msgstr ":doc:`conventions` 涵盖了Linux桌面集成的必要方面。这个页面提供了更多可选的桌面集成特性的信息。它也提供了一个指南，便于开发者让程序的用户界面兼容多数Linux桌面和发行版。"
 
 #: ../../desktop-integration.rst:10
 msgid ""
@@ -59,7 +57,7 @@ msgstr "应用程序的工具集（如Electron、GTK和Qt）默认提供了检�
 
 #: ../../desktop-integration.rst:26
 msgid "Portals"
-msgstr "门户"
+msgstr ""
 
 #: ../../desktop-integration.rst:28
 msgid ""
@@ -102,7 +100,7 @@ msgstr "截取屏幕或录屏"
 
 #: ../../desktop-integration.rst:41
 msgid "Toolkits like GTK and Qt provide transparent support for portals."
-msgstr ""
+msgstr "GTK 和 Qt 等工具包为门户提供透明支持。"
 
 #: ../../desktop-integration.rst:48
 msgid ""
@@ -110,7 +108,7 @@ msgid ""
 "portals API directly. See the `Portals API documentation "
 "<https://flatpak.github.io/xdg-desktop-portal/portal-docs.html>`_ for "
 "more information."
-msgstr ""
+msgstr "如果您没有使用这些工具包之一，则可以直接访问门户 API。 有关详细信息，请参阅 `Portals API 文档 <https://flatpak.github.io/xdg-desktop-portal/portal-docs.html>`_ 。"
 
 #: ../../desktop-integration.rst:54
 msgid "Notifications"
@@ -120,14 +118,13 @@ msgstr "通知"
 msgid ""
 "A number of toolkits and frameworks provide transparent support for Linux"
 " desktop notifications. This includes Electron, GTK, KDE and QML."
-msgstr ""
+msgstr "许多工具包和框架为 Linux 桌面通知提供透明支持。 这包括 Electron、GTK、KDE 和 QML。"
 
 #: ../../desktop-integration.rst:60
 msgid "Status icons"
 msgstr "状态图标"
 
 #: ../../desktop-integration.rst:62
-#, fuzzy
 msgid ""
 "Status icons are the same concept as the system tray or the taskbar on "
 "Windows, or menu bar icons on Mac. These are supported on most Linux "
@@ -149,11 +146,11 @@ msgstr "部分Linux发行版不显示状态图标；不过您仍然可以设置�
 msgid ""
 "XEmbed style icons will function on desktops that support them with the "
 "``x11`` permission."
-msgstr ""
+msgstr "XEmbed 样式图标将在支持 ``x11`` 权限的桌面上运行。"
 
 #: ../../desktop-integration.rst:77
 msgid "StatusNotifier"
-msgstr ""
+msgstr "状态通知程序"
 
 #: ../../desktop-integration.rst:79
 msgid ""
@@ -161,20 +158,20 @@ msgid ""
 " it requires talking to a non-hardenend host service. Risks include "
 "impersonation of other software and exploitation of bugs in the host "
 "service such as image decoders."
-msgstr ""
+msgstr "如果没有额外的权限，StatusNotifier 样式的图标将无法运行，因为它需要与非强化主机服务通信。 风险包括冒充其他软件和利用主机服务中的错误（例如图像解码器）。"
 
 #: ../../desktop-integration.rst:83
 msgid ""
 "At the very minimum to use StatusNotifier you must have the ``--talk-"
 "name=org.kde.StatusNotifierWatcher`` permission to register an item."
-msgstr ""
+msgstr "要使用 ``StatusNotifier``，您至少必须具有 ``--talk-name=org.kde.StatusNotifierWatcher`` 权限才能注册项目。"
 
 #: ../../desktop-integration.rst:86
 msgid ""
 "Depending on the exact implementation of StatusNotifier that your "
 "application is using it may need session bus ownership of "
 "``org.kde.StatusNotifierItem-$PID-$ITEM_ID``."
-msgstr ""
+msgstr "根据您的应用程序使用的 StatusNotifier 的具体实现，它可能需要 ``org.kde.StatusNotifierItem-$PID-$ITEM_ID`` 的会话总线所有权。"
 
 #: ../../desktop-integration.rst:89
 msgid ""
@@ -184,26 +181,25 @@ msgid ""
 "will allow this. This opens many new risks including the ability to "
 "impersonate any KDE service or application possibly capturing important "
 "user data."
-msgstr ""
+msgstr "此权限在 Flatpak 中存在问题，因为沙箱中的 $PID 值通常相同，并且该项目可能与其他应用程序冲突。 但是，如果需要，``--own-name=org.kde.*`` 权限将允许这样做。 这带来了许多新的风险，包括模仿任何可能捕获重要用户数据的 KDE 服务或应用程序的能力。"
 
 #: ../../desktop-integration.rst:95
 msgid ""
 "Most implementations of StatusNotifer have dropped this requirement but "
 "known exceptions to this are Electron versions older than 23.3.0."
-msgstr ""
+msgstr "大多数 StatusNotifer 实现都放弃了这一要求，但已知的例外是早于 23.3.0 的 Electron 版本。"
 
 #: ../../desktop-integration.rst:98
 msgid ""
 "Current versions of Electron, Chromium, KNotifications, and "
 "libappindicator are known to work without ownership permissions."
-msgstr ""
+msgstr "目前版本的 Electron、Chromium、KNotifications 和 libappindicator 无需所有权许可即可工作。"
 
 #: ../../desktop-integration.rst:102
 msgid "System search"
 msgstr "系统内搜索"
 
 #: ../../desktop-integration.rst:104
-#, fuzzy
 msgid ""
 "GNOME-based distributions, like CentOS, Fedora, Red Hat Enterprise Linux "
 "and Ubuntu, provide the option to integrate with system search, by "
@@ -211,10 +207,7 @@ msgid ""
 "old.gnome.org/SearchProvider/>`_. This allows application-provided search"
 " results to appear in the Activities Overview."
 msgstr ""
-"使用GNOME桌面的发行版，如CentOS、Fedora、Red Hat Enterprise "
-"Linux和Ubuntu整合了系统范围内搜索的功能： `search provider "
-"<https://developer.gnome.org/SearchProvider/>`_  。这使得应用程序可以将特定内容添加到沙箱外 "
-"Activities Overview（活动列表，译者注）并显示给用户。"
+"使用GNOME桌面的发行版，如CentOS、Fedora、Red Hat Enterprise Linux和Ubuntu整合了系统范围内搜索的功能： `search provider <https://developer.gnome.org/SearchProvider/>`_  。这使得应用程序可以将特定内容添加到沙箱外活动列表并显示给用户。"
 
 #: ../../desktop-integration.rst:110
 msgid "Window controls"
@@ -244,7 +237,7 @@ msgid ""
 "experience applications must always provide their own. Typically toolkits"
 " handle this but raw wayland clients can use `libdecor "
 "<https://gitlab.gnome.org/jadahl/libdecor>`_ for a general solution."
-msgstr ""
+msgstr "在 X11 上，如果应用程序不想绘制自己的窗口控件，则可以依赖系统提供的标题栏。为了获得一致的 Wayland 体验，应用程序必须始终提供自己的体验。通常工具包会处理这个问题，但原始 Wayland 客户端可以使用 `libdecor <https://gitlab.gnome.org/jadahl/libdecor>`_ 作为通用解决方案。"
 
 #: ../../desktop-integration.rst:129
 msgid "Window decorations"
@@ -262,7 +255,7 @@ msgstr ""
 
 #: ../../desktop-integration.rst:139
 msgid "Global menus"
-msgstr ""
+msgstr "全局菜单"
 
 #: ../../desktop-integration.rst:141
 msgid ""
@@ -270,11 +263,11 @@ msgid ""
 "<https://docs.gtk.org/gtk4/class.Application.html#properties>`_ or "
 "`QMenuBar <https://doc.qt.io/qt-6/qmenubar.html>`_ it will work as "
 "expected from within a sandboxed application."
-msgstr ""
+msgstr "如果您的应用程序使用 `Gtk.Application:menubar <https://docs.gtk.org/gtk4/class.Application.html#properties>`_ 或 `QMenuBar <https://doc.qt.io/qt-6/qmenubar.html>`_ , 它将在沙盒应用程序中按预期工作。"
 
 #: ../../desktop-integration.rst:145
 msgid "Theming"
-msgstr ""
+msgstr "主题化"
 
 #: ../../desktop-integration.rst:147
 msgid ""
@@ -288,28 +281,29 @@ msgid ""
 "Freedesktop runtime when the extension point is Gtk, and to the KDE "
 "runtime when the extension point is Qt."
 msgstr ""
+"Flatpak 应用程序无法直接使用系统主题。发生这种情况是因为 Flatpaks 无法使用 ``/usr`` 中的数据文件或库。 解决方案是将主题打包为 Flatpak，因为依赖主机为每个 Flatpak 提供正确的版本会破坏它提供的可移植性优势。 这些主题作为 `扩展 <https://github.com/flatpak/flatpak/wiki/Extensions>`_ 提供，当扩展点是 Gtk 时，提供给 Freedesktop 运行时；当扩展点是 Qt 时，提供给 KDE 运行时。"
 
 #: ../../desktop-integration.rst:149
 msgid ""
 "The theming system requires Flatpak 0.8.4+ and applications using up to "
 "date ``org.gnome.Platform`` 3.24+, or ``org.freedesktop.Platform`` 1.6+, "
 "or ``org.kde.Platform`` 5.9+."
-msgstr ""
+msgstr "主题系统需要 Flatpak 0.8.4+ 以及使用最新 ``org.gnome.Platform`` 3.24+、``org.freedesktop.Platform`` 1.6+ 或 ``org.kde.Platform`` 5.9+ 的应用程序。"
 
 #: ../../desktop-integration.rst:152
 msgid "Installing themes"
-msgstr ""
+msgstr "安装主题"
 
 #: ../../desktop-integration.rst:155
 msgid "Instructions for Gtk"
-msgstr ""
+msgstr "Gtk 说明"
 
 #: ../../desktop-integration.rst:157
 msgid ""
 "The current Gtk themes are packaged in the `flathub "
 "<https://flathub.org/>`_ repository which you can add (if it's not "
 "already added) by running::"
-msgstr ""
+msgstr "当前的 Gtk 主题打包在 `flathub <https://flathub.org/>`_  存储库中，您可以通过运行以下命令来添加（如果尚未添加）："
 
 #: ../../desktop-integration.rst:161
 msgid ""
@@ -321,33 +315,33 @@ msgid ""
 "the application ID, the remote from which the theme comes and the theme's"
 " description, while the second prints only the full name of the theme's "
 "flatpak package."
-msgstr ""
+msgstr "要查看当前打包主题的列表，您可以使用命令 ``flatpak search gtk3theme`` （自 Flatpak 版本 0.10.1 起可用）。 如果您使用比该版本更旧的 Flatpak 版本，您可以使用命令 ``flatpak remote-ls flathub | grep org.gtk.Gtk3theme``。 这两个命令之间的输出差异在于，第一个命令打印应用程序 ID、主题来源的遥控器以及主题的描述，而第二个命令仅打印主题的 flatpak 包的全名。"
 
 #: ../../desktop-integration.rst:163
 msgid ""
 "You can install themes with the command ``flatpak install flathub "
 "org.gtk.Gtk3theme.Foo``, replacing ``Foo`` with the name of the desired "
 "theme."
-msgstr ""
+msgstr "您可以使用命令 ``flatpak install flathub org.gtk.Gtk3theme.Foo`` 安装主题，将 ``Foo`` 替换为所需主题的名称。"
 
 #: ../../desktop-integration.rst:166
 msgid "Instructions for Qt"
-msgstr ""
+msgstr "Qt 使用说明"
 
 #: ../../desktop-integration.rst:168
 msgid ""
 "For the Qt theming to work, the flatpak packages kstyle and platformtheme"
 " must be installed. These are packed in the kdeapps repository which you "
 "can add by running::"
-msgstr ""
+msgstr "为了使 Qt 主题正常工作，必须安装 flatpak 软件包 kstyle 和 platformtheme。 这些都打包在 kdeapps 存储库中，您可以通过运行以下命令来添加："
 
 #: ../../desktop-integration.rst:172
 msgid "Afterwards the two packages can be installed with the following commands::"
-msgstr ""
+msgstr "之后可以使用以下命令安装这两个软件包："
 
 #: ../../desktop-integration.rst:178
 msgid "Applying themes"
-msgstr ""
+msgstr "应用主题"
 
 #: ../../desktop-integration.rst:180
 msgid ""
@@ -356,7 +350,7 @@ msgid ""
 "it corresponds to any of the Flatpak themes installed, and will fall back"
 " to Adwaita (if they use Gtk2 or Gtk3) or the default Qt theme (if they "
 "use Qt) if a corresponding theme isn't detected."
-msgstr ""
+msgstr "没有理想的方法来指定 Flatpak 应用程序使用的主题。 应用程序将尝试匹配当前正在使用的系统主题（如果它对应于已安装的任何 Flatpak 主题），并且将回退到 Adwaita（如果它们使用 Gtk2 或 Gtk3）或默认 Qt 主题（如果它们使用 Qt），如果 未检测到相应的主题。"
 
 #: ../../desktop-integration.rst:182
 msgid ""
@@ -369,7 +363,7 @@ msgid ""
 "being used aren't installed until those themes are enabled. If none of "
 "the corresponding system themes are currently being used, the "
 "applications will fall back to Adwaita or the default Qt theme."
-msgstr ""
+msgstr "从 Flatpak 0.10.1 开始，Flatpak 系统可以检测可用的系统主题是否与存储库中可用的任何 Flatpak 主题相对应，如果是，将根据 ``gtk-theme`` Dconf 密钥在更新时自动安装找到的主题。 然而，该键只能包含一个值，即当前正在使用的主题之一，这意味着当前未使用的匹配主题的 Flatpak 版本只有在启用这些主题后才会安装。 如果当前没有使用相应的系统主题，应用程序将回退到 Adwaita 或默认的 Qt 主题。"
 
 #: ../../desktop-integration.rst:184
 msgid ""
@@ -382,18 +376,18 @@ msgid ""
 "configure the dconf keys under ``/org/gnome/desktop/interface/``. For the"
 " DConf option to work on Wayland the application must also be configured "
 "to have DConf access."
-msgstr ""
+msgstr "在 X11 上，Gtk3 通过 XSettings 选择主题。 具体来说，GNOME XSettings 守护进程 ``gsd-xsettings`` 读取 DConf 值并将它们转换为 XSettings 值。 为此，您需要正确配置 xsettings 守护程序。 Wayland 上的 Gtk3 直接通过 Dconf 选取主题。 为此，您可以使用 KDE（使用 ``kde-gtk-config`` > 5.11.95）、开箱即用的 GNOME，或者在 ``/org/gnome/desktop/interface/`` 下手动配置 dconf 键。 为了使 DConf 选项在 Wayland 上运行，还必须将应用程序配置为具有 DConf 访问权限。"
 
 #: ../../desktop-integration.rst:187
 msgid "Other notes on theming"
-msgstr ""
+msgstr "关于主题的其他说明"
 
 #: ../../desktop-integration.rst:189
 msgid ""
 "In regards to icon themes, since Flatpak 0.8.8 the host icons are exposed"
 " to the guest, so that there is usually no need for the presence of "
 "Flatpak icon themes."
-msgstr ""
+msgstr "关于图标主题，从 Flatpak 0.8.8 开始，主机图标向访客公开，因此通常不需要存在 Flatpak 图标主题。"
 
 #: ../../desktop-integration.rst:191
 msgid ""
@@ -401,7 +395,7 @@ msgid ""
 "  in ``gnome-tweak-tool`` it will not work as that simply writes to "
 "``settings.ini`` which isn’t available in the sandbox. Use dark versions "
 "of themes instead if they exist."
-msgstr ""
+msgstr "如果您在 ``gnome-tweak-tool`` 中使用全局深色主题选项（在 GNOME-Tweaks 3.28 中删除），它将无法工作，因为它只是写入 ``settings.ini``，而在沙箱中不可用。 使用深色版本的主题（如果存在）。"
 
 #~ msgid ""
 #~ "Toolkits like GTK and Qt provide "

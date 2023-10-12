@@ -131,35 +131,34 @@ msgid ""
 msgstr "此命令在给定应用程序的沙箱中运行shell，授予它访问logind对应的D-Bus服务的权限。"
 
 #: ../../debugging.rst:76
-#, fuzzy
 msgid "Inspecting portal permissions"
-msgstr "覆盖沙盒权限"
+msgstr "覆盖portal权限"
 
 #: ../../debugging.rst:78
 msgid ""
 "Flatpak has a number of commands that allow to manage portal permissions "
 "for applications."
-msgstr ""
+msgstr "Flatpak 有许多命令可以管理应用程序的门户权限。"
 
 #: ../../debugging.rst:81
 msgid "To see all portal permissions of an application, use::"
-msgstr ""
+msgstr "要查看应用程序的所有门户权限，请使用："
 
 #: ../../debugging.rst:85
 msgid "To reset all portal permissions of an application, use::"
-msgstr ""
+msgstr "要重置应用程序的所有门户权限，请使用："
 
 #: ../../debugging.rst:91
 msgid "Interacting with running sandboxes"
-msgstr ""
+msgstr "与正在运行的沙箱交互"
 
 #: ../../debugging.rst:93
 msgid ""
 "You can see all the apps that are currently running in Flatpak sandboxes "
 "(since 1.2)::"
-msgstr ""
+msgstr "您可以查看当前在 Flatpak 沙箱中运行的所有应用程序（自 1.2 起）："
 
 #: ../../debugging.rst:98
 msgid "And, if you need to, you can terminate one by force (since 1.2)::"
-msgstr ""
+msgstr "并且，如果需要，您可以强制终止其中之一（自 1.2 起）："
 

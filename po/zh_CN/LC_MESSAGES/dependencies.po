@@ -137,7 +137,7 @@ msgstr "虽然捆绑非常强大和灵活，但它也给应用程序开发人员
 msgid ""
 "The specifics of how to bundle libraries is covered in the "
 ":doc:`manifests` section."
-msgstr "如何捆绑库的细节在  :doc:`mainifests` 可以找到。"
+msgstr "如何捆绑库的细节在 :doc:`manifests` 可以找到。"
 
 #: ../../dependencies.rst:73
 msgid "Base apps"

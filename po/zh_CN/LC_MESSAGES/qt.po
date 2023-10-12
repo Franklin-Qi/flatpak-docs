@@ -4,7 +4,6 @@
 # This file is distributed under the same license as the Flatpak package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flatpak \n"
@@ -27,17 +26,17 @@ msgid ""
 "For Qt-based applications we have the ``org.kde.Platform`` runtime (and "
 "corresponding ``org.kde.Sdk`` sdk runtime) that will offer us most Qt "
 "modules and KDE Frameworks for our applications to use."
-msgstr ""
+msgstr "对于基于 Qt 的应用程序，我们有 ``org.kde.Platform`` 运行时（以及相应的 ``org.kde.Sdk`` sdk 运行时），它将为我们的应用程序提供大多数 Qt 模块和 KDE 框架。"
 
 #: ../../qt.rst:8
 msgid ""
 "For example, the following YAML makes building a random Qt application "
 "really straight-forward."
-msgstr ""
+msgstr "例如，以下 YAML 使构建随机 Qt 应用程序变得非常简单。"
 
 #: ../../qt.rst:35
 msgid "Contents"
-msgstr ""
+msgstr "内容"
 
 #: ../../qt.rst:37
 msgid ""
@@ -46,7 +45,7 @@ msgid ""
 "<https://invent.kde.org/packaging/flatpak-kde-runtime>`__. If you want "
 "more control, it's also possible to use the ``org.freedesktop.Platform`` "
 "as a base and bundle the parts of Qt you need."
-msgstr ""
+msgstr "``org.kde.Platform`` 运行时包含所有 Qt，包括一些 KDE 框架。 如果您发现任何问题，我们鼓励您 `报告 <https://invent.kde.org/packaging/flatpak-kde-runtime>`_ 。 如果您想要更多控制，也可以使用 ``org.freedesktop.Platform`` 作为基础并捆绑您需要的 Qt 部分。"
 
 #~ msgid ""
 #~ "The ``org.kde.Platform`` runtime includes all"

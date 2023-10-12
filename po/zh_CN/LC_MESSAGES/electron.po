@@ -34,7 +34,6 @@ msgid ""
 msgstr "本教程提供有关如何构建Electron应用程序与其他应用程序不同的信息。 它还包括有关构建Electron应用程序的工具以及如何使用它的信息。"
 
 #: ../../electron.rst:12
-#, fuzzy
 msgid ""
 "The guide walks through the `manifest file <https://github.com/flathub"
 "/electron-sample-app/blob/master/flatpak/org.flathub.electron-sample-"
@@ -59,7 +58,6 @@ msgid ""
 msgstr "虽然并非绝对必要，但最好自己尝试构建和运行示例应用程序。"
 
 #: ../../electron.rst:26
-#, fuzzy
 msgid ""
 "To get setup for the build, download or clone the sample app from GitHub,"
 " and navigate to the ``/flatpak`` directory in the terminal. You must "
@@ -98,7 +96,6 @@ msgid "The Electron base app"
 msgstr "Electron base应用"
 
 #: ../../electron.rst:61
-#, fuzzy
 msgid ""
 "Next, the manifest specifies that the Electron base app should be used, "
 "by specifying the ``base`` and ``base-version`` properties in the "
@@ -106,7 +103,6 @@ msgid ""
 msgstr "然后，清单文件通过 ``base`` 和 ``base-version`` 属性指明了Electron要使用的的base app::"
 
 #: ../../electron.rst:70
-#, fuzzy
 msgid ""
 "Base apps are described in :doc:`dependencies`.  Using the Electron base "
 "app is much faster and more convenient than manually building Electron "
@@ -114,30 +110,30 @@ msgid ""
 "duplication on users' machines, since it means that Electron is only "
 "saved once on disk."
 msgstr ""
-"base app在 :doc:`building-basics` 有介绍。使用Electron的base "
+"base app在 :doc:`dependencies` 有介绍。使用Electron的base "
 "app比手动构建Electron和它的依赖要方便和快速得多。也有在用户的机器上减少大量副本文件的优点，因为这意味着Electron在磁盘上只保存一份。"
 
 #: ../../electron.rst:76
 msgid "The Node.js SDK extension"
-msgstr ""
+msgstr "Node.js SDK 扩展"
 
 #: ../../electron.rst:78
 msgid ""
 "In order to build Electron-based apps, you need Node.js available at "
 "build time. Flathub provides Node.js LTS versions as extensions for the "
 "SDK, so you can install one of them and add it in your apps' manifest:"
-msgstr ""
+msgstr "为了构建基于 Electron 的应用程序，您需要在构建时可用 Node.js。 Flathub 提供 Node.js LTS 版本作为 SDK 的扩展，因此您可以安装其中之一并将其添加到应用程序的清单中："
 
 #: ../../electron.rst:87
 msgid "Enable the extension by adding it to ``PATH``:"
-msgstr ""
+msgstr "通过将其添加到 ``PATH`` 来启用扩展："
 
 #: ../../electron.rst:94
 msgid ""
 "Note that the extension name (last portion of reverse-dns notation, "
 "``node18`` in this example) must be the same in ``sdk-extensions`` and "
 "``append-path``."
-msgstr ""
+msgstr "请注意，``sdk-extensions`` 和 ``append-path`` 中的扩展名称（reverse-dns 表示法的最后部分，本例中为 ``node18``）必须相同。"
 
 #: ../../electron.rst:98
 msgid "Command"
@@ -194,10 +190,7 @@ msgid ""
 " work. Therefore, Node.js packages must be downloaded prior to running "
 "the build. Setting the  ``electron_config_cache`` environment variable "
 "means that these will be found when it comes to the build."
-msgstr ""
-"``flatpak-builder`` "
-"默认不能访问网络。这意味着依赖于下载资源的工具无法工作。因此，Node.js包必须在构建之前提前下载好。设置环境变量 "
-"``electron_config_cache`` 表明这些包会在构建的时候被找到。"
+msgstr "``flatpak-builder`` 默认不能访问网络。这意味着依赖于下载资源的工具无法工作。因此，Node.js包必须在构建之前提前下载好。设置环境变量 ``electron_config_cache`` 表明这些包会在构建的时候被找到。"
 
 #: ../../electron.rst:155
 msgid ""
@@ -216,7 +209,6 @@ msgid "The next line is how NPM modules get bundled as part of Flatpaks:"
 msgstr "下一行是NPM模块如何作为flatpak的一部分进行绑定："
 
 #: ../../electron.rst:186
-#, fuzzy
 msgid ""
 "Since even simple Node.js applications depend on dozens of packages, it "
 "would be impractical to specify all of them as part of a manifest file. A"
@@ -225,12 +217,10 @@ msgid ""
 "Node.js packages with NPM or Yarn and include them in an application's "
 "sources."
 msgstr ""
-"即使是非常简单的Node.js应用都依赖几十个包，在一个清单文件中去指定它们是不切实际的因此 一个 `Python脚本 \n"
-"  <https://github.com/flatpak/flatpak-builder-tools/tree/master/npm>`_ "
+"即使是非常简单的Node.js应用都依赖几十个包，在一个清单文件中去指定它们是不切实际的因此 一个 `Python脚本  <https://github.com/flatpak/flatpak-builder-tools/tree/master/npm>`_ "
 "被开发出来，使用NPM下载Node.js包并将他们包含在应用源码里。"
 
 #: ../../electron.rst:192
-#, fuzzy
 msgid ""
 "The Python script requires a ``package-lock.json`` (or ``yarn.lock``) "
 "file. This file contains information about the packages that an "
@@ -243,7 +233,6 @@ msgstr ""
 "供参考）。下面运行这个脚本::"
 
 #: ../../electron.rst:199
-#, fuzzy
 msgid ""
 "This generates the manifest JSON needed to build the NPM/Yarn packages "
 "for the application, which are outputted to a file called ``generated-"
@@ -262,19 +251,17 @@ msgid "Launching the app"
 msgstr "启动应用"
 
 #: ../../electron.rst:209
-#, fuzzy
 msgid ""
 "The Electron app is run through a simple script. This can be given any "
 "name but must be specified in the manifest's ``\"command\":`` property. "
 "See below a sample wrapper for launching app:"
-msgstr "Electron应用通过一个简单的脚本文件运行。可以用任何名字，但是必须在清单文件中 ``“command\":`` 属性指明。"
+msgstr "Electron应用通过一个简单的脚本文件运行。可以用任何名字，但是必须在清单文件中 ``\"command\":`` 属性指明。"
 
 #: ../../electron.rst:221
 msgid "Build commands"
 msgstr "构建命令"
 
 #: ../../electron.rst:223
-#, fuzzy
 msgid ""
 "Last but not least, since the simple build option is being used, a list "
 "of build commands must be provided. As can be seen, ``npm`` is run with "
@@ -294,14 +281,14 @@ msgid ""
 " cause ``electron-builder`` to try to fetch additional binaries at build-"
 "time (Even if `--dir` option is used). The following example shows a "
 "configuration that will try to download AppImage binaries:"
-msgstr ""
+msgstr "请注意，如果您尝试打包的应用程序在 ``package.json`` 中包含带有 Linux 说明的构建块，这可能会导致 ``electro-builder`` 尝试在构建时获取其他二进制文件（即使使用了 ``--dir`` 选项）。 以下示例显示了尝试下载 AppImage 二进制文件的配置："
 
 #: ../../electron.rst:255
 msgid ""
 "The preferred way of fixing this, is not a patch, but a build-time edit "
 "using ``jq``. The following command will replace ``\"target\": "
 "\"AppImage\"`` with ``\"target\": \"dir\"``:"
-msgstr ""
+msgstr "解决这个问题的首选方法不是补丁，而是使用 ``jq`` 进行构建时编辑。  以下命令将用 ``“target”：“dir”`` 替换 ``“target”：“AppImage”`` ："
 
 #~ msgid ""
 #~ "Note that this base app is for "

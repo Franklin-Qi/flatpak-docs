@@ -4,7 +4,6 @@
 # This file is distributed under the same license as the Flatpak package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flatpak \n"
@@ -20,31 +19,31 @@ msgstr ""
 
 #: ../../multiarch.rst:2
 msgid "Multiarch support"
-msgstr ""
+msgstr "多架构支持"
 
 #: ../../multiarch.rst:4
 msgid ""
 "Flatpak has multiarch/multilib support, but it's not enabled by default "
 "and require some additional steps to enable it. This section covers "
 "enabling multiarch/multilib in your application bundle."
-msgstr ""
+msgstr "Flatpak 具有多架构/多库支持，但默认情况下未启用，并且需要一些额外的步骤来启用它。本节涵盖启用应用程序包中的 multiarch/multilib。 "
 
 #: ../../multiarch.rst:9
 msgid "Running 32-bit programs"
-msgstr ""
+msgstr "运行32位程序 "
 
 #: ../../multiarch.rst:11
 msgid ""
 "In order to set up the run time environment for 32-bit executables, first"
 " you'll need to allow it in ``finish-args``:"
-msgstr ""
+msgstr "为了设置 32 位可执行文件的运行时环境，首先您需要允许它进入 ``finish-args``: "
 
 #: ../../multiarch.rst:19
 msgid ""
 "This is enough for static binaries, but most real-world GNU/Linux "
 "programs are linked dynamically. Those need some shared libraries to "
 "work."
-msgstr ""
+msgstr "这对于静态二进制文件来说已经足够了，但是大多数现实世界的 GNU/Linux 程序都是 动态链接。这些需要一些共享库才能工作。 "
 
 #: ../../multiarch.rst:22
 msgid ""
@@ -53,30 +52,30 @@ msgid ""
 "can be attached to an app of different architecture. In order to enable "
 "the extension for your app, define an extension point for it in the app "
 "manifest:"
-msgstr ""
+msgstr "Freedesktop.org 和 GNOME SDK 都提供了一个特殊的 flatpak 扩展，其中包含 相应架构的库集。这个扩展可以附加 到不同架构的应用程序。为了启用您的扩展 app，在应用清单中为其定义一个扩展点："
 
 #: ../../multiarch.rst:40
 msgid "For GNOME runtime, use ``org.gnome.Platform.Compat.i386`` instead."
-msgstr ""
+msgstr "对于 GNOME 运行时，请使用 ``org.gnome.Platform.Compat.i386`` 反而。 "
 
 #: ../../multiarch.rst:42
 msgid ""
 "Note that this extension ``version`` must match the ``runtime-version`` "
 "of the application."
-msgstr ""
+msgstr "注意这个扩展 ``version`` 必须匹配 ``runtime-version`` 的应用。"
 
 #: ../../multiarch.rst:45
 msgid ""
 "If the 32-bit programs make use of GPU acceleration, or have some "
 "graphical UI in general, you'll also need 32-bit GL drivers. Add an "
 "extension point for it:"
-msgstr ""
+msgstr "如果32位程序使用GPU加速，或者有一些图形UI 一般来说，您还需要 32位 GL 驱动程序。为其添加扩展点： "
 
 #: ../../multiarch.rst:63
 msgid ""
 "Note that the ``versions`` property here must contain both ``1.4`` and "
 "the same value as in ``runtime-version``."
-msgstr ""
+msgstr "请注意， ``versions``这里的属性必须包含两者 ``1.4``和相同的 值如 ``runtime-version``."
 
 #: ../../multiarch.rst:66
 msgid ""
@@ -84,28 +83,28 @@ msgid ""
 " mount points are specified in ``directory`` properties and are relative "
 "to the app bundle mount point, i.e. to ``/app/``). This can be done at "
 "stage of the build."
-msgstr ""
+msgstr "确保创建将安装扩展的目录（安装 点指定于 ``directory`` 属性并且与应用程序相关 捆绑安装点，即 ``/app/``）。这可以在构建阶段完成。 "
 
 #: ../../multiarch.rst:70
 msgid ""
 "Finally, you need to make the dynamic library loader know the paths to "
 "32-bit libraries. In order to do this, you can install a "
 "``/app/etc/ld.so.conf`` file with contents like this:"
-msgstr ""
+msgstr "最后，你需要让动态库加载器知道32位的路径 图书馆。 为此，您可以安装 ``/app/etc/ld.so.conf`` 文件 内容如下： "
 
 #: ../../multiarch.rst:79
 msgid ""
 "Here ``/app/lib32`` is the directory where you install additional 32-bit "
 "libraries, if any."
-msgstr ""
+msgstr "这里 ``/app/lib32`` 是安装额外 32 位的目录图书馆，如果有的话。"
 
 #: ../../multiarch.rst:82
 msgid "You can combine the above two steps in a special module, e.g."
-msgstr ""
+msgstr "您可以将上述两个步骤组合在一个特殊的模块中，例如 "
 
 #: ../../multiarch.rst:100
 msgid "Building 32-bit modules"
-msgstr ""
+msgstr "构建 32 位模块"
 
 #: ../../multiarch.rst:102
 msgid ""
@@ -114,17 +113,17 @@ msgid ""
 "components yourself to ship them with the application. It assumes that "
 "you are already familiar with building (single-arch) flatpaks. If not, "
 "please refer to :doc:`flatpak-builder` guide first."
-msgstr ""
+msgstr "上面的部分描述了如何运行已构建的 32 位程序。 本节将描述您自己构建 32 位组件并随应用程序一起提供的过程。它假设您已经熟悉构建（单架构）Flatpaks。 如果没有，请先参阅 :doc:`flatpak-builder` 指南。"
 
 #: ../../multiarch.rst:108
 msgid "First of all, you'll need to enable some SDK extensions at build time:"
-msgstr ""
+msgstr "首先，您需要在构建时启用一些 SDK 扩展： "
 
 #: ../../multiarch.rst:116
 msgid ""
 "The first one is the 32-bit portion of the SDK, containing 32-bit "
 "libraries and development files."
-msgstr ""
+msgstr "第一个是 SDK 的 32 位部分，包含 32 位库和 开发文件。"
 
 #: ../../multiarch.rst:119
 msgid ""
@@ -132,14 +131,14 @@ msgid ""
 "multilib builds, but the flatpak SDK comes with gcc without multilib "
 "support. Thus, you will need a cross-compiler for building x86 on x86_64 "
 "just as you would need it for any foreign architecture like aarch64."
-msgstr ""
+msgstr "第二个是交叉编译器。 通常 ``gcc -m32`` 用于 multilib 构建，但 flatpak SDK 附带的 gcc 不支持 multilib。 因此，您将需要一个交叉编译器来在 x86_64 上构建 x86，就像您需要它来构建任何外部架构（如 aarch64）一样。"
 
 #: ../../multiarch.rst:124
 msgid ""
 "In order to build a 32-bit module, some global build options needs to be "
 "overridden. Examples here assume that 32-bit libraries are installed in "
 "``/app/lib32`` directory:"
-msgstr ""
+msgstr "为了构建 32 位模块，需要覆盖一些全局构建选项。 这里的示例假设 32 位库安装在 ``/app/lib32`` 目录中："
 
 #: ../../multiarch.rst:146
 msgid ""
@@ -148,11 +147,11 @@ msgid ""
 "save you from copy-pasting the same snippet. You can define the 32-bit "
 "``build-options`` object somewhere in the manifest, add an anchor to it, "
 "and then point each 32-bit modules' ``build-options`` to that anchor:"
-msgstr ""
+msgstr "需要为每个 32 位模块设置这些 ``build-options``。 如果您的应用程序清单采用 YAML 格式，则 YAML 锚点可以派上用场，让您无需复制粘贴相同的代码片段。 您可以在清单中的某个位置定义 32 位 ``build-options`` 对象，向其添加一个锚点，然后将每个 32 位模块的 ``build-options`` 指向该锚点："
 
 #: ../../multiarch.rst:170
 msgid ""
 "Of course, in order to actually use 32-bit modules you've build, you'll "
 "also need all the same setup from the previous section."
-msgstr ""
+msgstr "当然，为了实际使用您构建的 32 位模块，您还需要上一节中的所有相同设置。"
 

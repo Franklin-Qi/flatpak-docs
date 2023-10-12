@@ -39,7 +39,6 @@ msgstr ""
 "接受一个 ``build`-commands`` 的字符数组，将按顺序执行。"
 
 #: ../../python.rst:13
-#, fuzzy
 msgid ""
 "For example, the following YAML makes building the popular requests "
 "module rather straightforward:"
@@ -66,7 +65,6 @@ msgid ""
 msgstr "注意 ``--no-deps`` 仅仅用于实例——一旦依赖的模块有它自己的依赖，构建就会失败。如果存在许多依赖，最好是用下一章节的方法来安装。"
 
 #: ../../python.rst:39
-#, fuzzy
 msgid "Building multiple Python dependencies"
 msgstr "构建多个python依赖"
 
@@ -94,7 +92,6 @@ msgid "urllib3"
 msgstr "urllib3"
 
 #: ../../python.rst:49
-#, fuzzy
 msgid ""
 "Four dependencies aren't very many, and could be installed using the "
 "``simple`` method described above. However, anything more complex than "
@@ -121,10 +118,9 @@ msgstr "使用 ``flatpak-pip-generator`` 是简单的::"
 msgid ""
 "Or if you have a ``requirements.txt`` file you can generate modules for "
 "every listed package::"
-msgstr ""
+msgstr "或者，如果您有一个``requirements.txt`` 文件，您可以为每个列出的包生成模块："
 
 #: ../../python.rst:68
-#, fuzzy
 msgid ""
 "This will output a file called ``python3-requests.json``, containing the "
 "necessary manifest JSON, which can then be included in your application's"
