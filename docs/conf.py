@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# Flatpak documentation build configuration file, created by
-# sphinx-quickstart on Mon Jan 16 18:31:59 2017.
+# Kpk documentation build configuration file, created by
+# sphinx-quickstart on Mon Jan 16 18:31:59 2022.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -50,9 +50,9 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'Flatpak'
-copyright = '2017-2022, Flatpak Team. Licensed under Creative Commons Attribution 4.0 International License.'
-author = 'Flatpak Team'
+project = 'Kpk'
+copyright = '2022-2023, Kylin Team. Licensed under Creative Commons Attribution 4.0 International License.'
+author = 'Kpk Team'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -117,7 +117,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'Flatpakdoc'
+htmlhelp_basename = 'Kpkdoc'
 
 
 # -- Options for LaTeX output ---------------------------------------------
@@ -144,8 +144,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'Flatpak.tex', 'Flatpak Documentation',
-     'Flatpak Team', 'manual'),
+    (master_doc, 'Kpk.tex', 'Kpk Documentation',
+     'Kpk Team', 'manual'),
 ]
 
 
@@ -154,7 +154,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'flatpak', 'Flatpak Documentation',
+    (master_doc, 'kpk', 'Kpk Documentation',
      [author], 1)
 ]
 
@@ -165,7 +165,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'Flatpak', 'Flatpak Documentation',
-     author, 'Flatpak', 'One line description of project.',
+    (master_doc, 'Kpk', 'Kpk Documentation',
+     author, 'Kpk', 'One line description of project.',
      'Miscellaneous'),
 ]
