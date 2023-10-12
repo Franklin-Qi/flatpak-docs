@@ -1,2 +1,3 @@
-Sphinx
-sphinx-rtd-theme
+sphinx-intl
+python3-sphinx
+python3-sphinx-rtd-theme
